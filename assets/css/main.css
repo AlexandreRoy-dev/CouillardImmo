@@ -6759,3 +6759,205 @@ section,
     max-width: 300px;
   }
 }
+/* --- ULTRA PREMIUM AGENT CARDS --- */
+
+.agent-card-premium {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.06);
+  transition: all .3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.agent-card-premium:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 55px rgba(0,0,0,0.10);
+}
+
+/* --- PHOTO --- */
+
+.agent-photo {
+  position: relative;
+  background: #f8f8f8;
+}
+
+.agent-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 20px;
+}
+
+/* --- BADGE PREMIUM --- */
+
+.status-badge-premium {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 6px 14px;
+  font-size: .75rem;
+  font-weight: 600;
+  border-radius: 50px;
+  color: #fff;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.status-badge-premium.gold {
+  background: linear-gradient(135deg, #f7d77e, #d7a63a);
+}
+
+.status-badge-premium.red {
+  background: #d0103a;
+}
+
+/* --- CONTENT --- */
+
+.agent-content {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.agent-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.agent-title {
+  color: #d0103a;
+  font-weight: 600;
+  margin-top: 4px;
+  text-transform: uppercase;
+  font-size: .9rem;
+}
+
+/* --- STATS --- */
+
+.agent-stats-premium {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px 0;
+  padding: 18px;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  background: #fafafa;
+}
+
+.agent-stat-block {
+  text-align: center;
+  flex: 1;
+}
+
+.agent-stat-block:not(:last-child) {
+  border-right: 1px solid #e7e7e7;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: .8rem;
+  color: #777;
+  text-transform: uppercase;
+}
+
+/* --- LOCATION --- */
+
+.agent-location-premium {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #444;
+  font-size: .9rem;
+  margin-bottom: 18px;
+}
+
+.agent-location-premium i {
+  color: #d0103a;
+}
+
+/* --- CONTACT DIRECT --- */
+
+.agent-contact-premium {
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+}
+
+.contact-line i {
+  color: #d0103a;
+  font-size: 1rem;
+}
+
+.contact-line a {
+  color: #444;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-line a:hover {
+  color: #d0103a;
+}
+
+/* --- BUTTON --- */
+
+.profile-link-premium {
+  margin-top: auto;
+  background: #d0103a;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.profile-link-premium:hover {
+  background: #000;
+}
+
+/* Remove old overlay */
+.agent-overlay,
+.contact-buttons {
+  display: none !important;
+}
+/* Fix long email overflow */
+.agent-contact-premium .contact-line {
+  flex-wrap: wrap;             /* permet le retour à la ligne */
+}
+
+.agent-contact-premium .contact-line a {
+  word-break: break-word;      /* coupe proprement */
+  overflow-wrap: anywhere;     /* évite le débordement */
+  display: inline-block;       /* permet le wrap autour de l’icône */
+  max-width: 100%;
+}
+
+/* Ajuste alignement vertical si la ligne fait 2 lignes */
+.agent-contact-premium .contact-line i {
+  margin-top: 2px;             /* garde l'alignement parfait */
+}
+/* Ajoute de l'espace entre le séparateur et le texte à droite */
+.agent-stats-premium .agent-stat-block:last-child {
+  padding-left: 14px; /* ajustable si tu veux plus / moins */
+}
