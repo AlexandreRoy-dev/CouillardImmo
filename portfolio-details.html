@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - Couillard Immo</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header fixed-top">
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="container-fluid container-xl">
+        <div class="d-flex py-3 align-items-center justify-content-between">
+
+          <!-- Logo -->
+          <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.webp" alt=""> -->
+            <h1 class="sitename">Couillard Immobilier</h1>
+          </a>
+
+          <!-- Navigation -->
+          <div class="header-nav">
+            <nav id="navmenu" class="navmenu">
+              <ul>
+                <li><a href="#hero">Accueil</a></li>
+
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">À propos</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+          </div>
+
+          <!-- Actions -->
+          <div class="header-actions d-flex align-items-center justify-content-end">
+
+            <!-- Account -->
+            <div class="dropdown account-dropdown">
+              <button class="header-action-btn" data-bs-toggle="dropdown">
+                <i class="bi bi-person"></i>
+              </button>
+              <div class="dropdown-menu">
+                <div class="dropdown-header">
+                  <h6>Welcome to <span class="sitename">Couillard Immobilier</span></h6>
+                  <p class="mb-0">Access account &amp; manage orders</p>
+                </div>
+                <div class="dropdown-body">
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-person-circle me-2"></i>
+                    <span>My Profile</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-bag-check me-2"></i>
+                    <span>My Orders</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-heart me-2"></i>
+                    <span>My Wishlist</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-gear me-2"></i>
+                    <span>Settings</span>
+                  </a>
+                </div>
+                <div class="dropdown-footer">
+                  <a href="register.html" class="btn btn-primary w-100 mb-2">Sign In</a>
+                  <a href="login.html" class="btn btn-outline-primary w-100">Register</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Wishlist -->
+            <a href="account.html" class="header-action-btn d-none d-md-block">
+              <i class="bi bi-heart"></i>
+              <span class="badge">0</span>
+            </a>
+
+            <!-- Cart -->
+            <a href="cart.html" class="header-action-btn">
+              <i class="bi bi-cart3"></i>
+              <span class="badge">3</span>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="heading-title">Portfolio Details</h1>
+              <p class="mb-0">
+                Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
+                odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum
+                debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat
+                ipsum dolorem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-slider-container">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": 1,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    },
+                    "navigation": {
+                      "nextEl": ".swiper-button-next",
+                      "prevEl": ".swiper-button-prev"
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/screens/app-1.webp" alt="Project Screenshot" class="img-fluid rounded-4">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/product/product-showcase-3.webp" alt="Project Screenshot" class="img-fluid rounded-4">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/screens/phone-1.webp" alt="Project Screenshot" class="img-fluid rounded-4">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+
+            <div class="project-description">
+              <h2>Project Overview</h2>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+
+              <div class="feature-highlights">
+                <h3>Key Features</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                      <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h4>Secure Architecture</h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="250">
+                      <div class="feature-icon">
+                        <i class="bi bi-speedometer2"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h4>High Performance</h4>
+                        <p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                      <div class="feature-icon">
+                        <i class="bi bi-phone"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h4>Mobile Responsive</h4>
+                        <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui proin eget tortor risus.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="350">
+                      <div class="feature-icon">
+                        <i class="bi bi-cloud-arrow-up"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h4>Cloud Integration</h4>
+                        <p>Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit eget tincidunt nibh.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="technologies-used" data-aos="fade-up" data-aos-delay="400">
+                <h3>Technologies Used</h3>
+                <div class="tech-stack">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">AWS</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">TypeScript</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-4">
+            <div class="project-info-card" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project Information</h3>
+
+              <div class="info-item">
+                <h4>Client</h4>
+                <p>TechStart Solutions Inc.</p>
+              </div>
+
+              <div class="info-item">
+                <h4>Project Type</h4>
+                <p>Web Application Development</p>
+              </div>
+
+              <div class="info-item">
+                <h4>Duration</h4>
+                <p>6 Months</p>
+              </div>
+
+              <div class="info-item">
+                <h4>Team Size</h4>
+                <p>8 Developers</p>
+              </div>
+
+              <div class="info-item">
+                <h4>Launch Date</h4>
+                <p>March 2024</p>
+              </div>
+
+              <div class="info-item">
+                <h4>Project URL</h4>
+                <p><a href="https://example.com" target="_blank">Visit Live Site <i class="bi bi-arrow-up-right"></i></a></p>
+              </div>
+
+              <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">
+                  <i class="bi bi-download"></i>
+                  Download Case Study
+                </a>
+                <a href="#" class="btn btn-outline">
+                  <i class="bi bi-share"></i>
+                  Share Project
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-stats-card" data-aos="fade-up" data-aos-delay="300">
+              <h3>Project Impact</h3>
+
+              <div class="stat-item">
+                <div class="stat-number">
+                  <span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2" class="purecounter"></span>%
+                </div>
+                <div class="stat-label">Performance Improvement</div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-number">
+                  <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="2" class="purecounter"></span>K+
+                </div>
+                <div class="stat-label">Monthly Active Users</div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-number">
+                  <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="2" class="purecounter"></span>%
+                </div>
+                <div class="stat-label">Conversion Rate Increase</div>
+              </div>
+
+            </div>
+
+            <div class="related-projects" data-aos="fade-up" data-aos-delay="400">
+              <h3>Related Projects</h3>
+
+              <div class="related-item">
+                <img src="assets/img/portfolio/portfolio-2.webp" alt="Related Project" class="img-fluid rounded-3">
+                <div class="related-content">
+                  <h4>E-commerce Platform</h4>
+                  <p>Full-stack development for online retail solution</p>
+                  <a href="#" class="related-link">View Project <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="related-item">
+                <img src="assets/img/portfolio/portfolio-5.webp" alt="Related Project" class="img-fluid rounded-3">
+                <div class="related-content">
+                  <h4>Mobile Banking App</h4>
+                  <p>Secure financial application with modern UX</p>
+                  <a href="#" class="related-link">View Project <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <a href="index.html" class="logo d-flex align-items-center mb-3">
+              <span class="sitename">Couillard Immobilier</span>
+            </a>
+            <p class="tagline">Innovating the digital landscape with elegant solutions and timeless design.</p>
+
+            <div class="social-links mt-4">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="footer-links-grid">
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <h5>Company</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Newsroom</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-4">
+                <h5>Services</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">UI/UX Design</a></li>
+                  <li><a href="#">Digital Strategy</a></li>
+                  <li><a href="#">Branding</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-4">
+                <h5>Support</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="footer-cta">
+            <h5>Let's Connect</h5>
+            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-bottom-content">
+              <p class="mb-0">© <span class="sitename">Couillard Immobilier</span>. All rights reserved.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
