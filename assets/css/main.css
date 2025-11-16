@@ -6964,3 +6964,23 @@ section,
 .agents .agent-stats-premium .agent-stat-block:last-child {
   padding-left: 14px !important;
 }
+/* --- Corrections pour cartes ultra premium agent -- dernière partie du fichier --- */
+.agent-stats-premium .agent-stat-block:last-child {
+  padding-left: 14px !important;
+}
+
+/* Fix long email overflow (sélecteurs plus spécifiques) */
+.agents .agent-contact-premium .contact-line {
+  flex-wrap: wrap !important;
+}
+
+.agents .agent-contact-premium .contact-line a {
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  display: inline-block !important;
+  max-width: 100% !important;
+}
+
+.agents .agent-contact-premium .contact-line i {
+  margin-top: 2px !important;
+}
