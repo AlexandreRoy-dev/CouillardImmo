@@ -6961,3 +6961,6 @@ section,
 .agent-stats-premium .agent-stat-block:last-child {
   padding-left: 14px; /* ajustable si tu veux plus / moins */
 }
+.agents .agent-stats-premium .agent-stat-block:last-child {
+  padding-left: 14px !important;
+}
