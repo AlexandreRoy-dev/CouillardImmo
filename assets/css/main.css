@@ -6582,3 +6582,180 @@ section,
     padding: 30px 20px;
   }
 }
+
+.header-logo {
+  height: 75px ; /* Ajuste selon ton header */
+  width: auto;
+}
+
+@media (max-width: 991px) {
+  .header-logo {
+    height: 40px; /* Taille plus petite pour mobile */
+  }
+}
+.btn-primary-header {
+  background-color: #d0103a;
+  color: #fff !important;
+  padding: 12px 24px !important;     /* ↑ Donne enfin une vraie hauteur */
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 1.2 !important;       /* ↑ Empêche ton thème d'écraser la hauteur */
+  height: auto !important;           /* ↑ Force la hauteur auto */
+}
+
+.btn-primary-header:hover {
+  background-color: #ffffff;
+  color: #000 !important;
+}
+/* --- GRID LAYOUT PREMIUM STYLE --- */
+.agents .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Beautify spacing between cards */
+}
+
+/* Force each card column to behave uniformly */
+.agents .row > div {
+  display: flex;
+}
+
+/* Equal height card */
+.agent-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+/* Luxury Hover */
+.agent-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 32px rgba(0,0,0,0.12);
+}
+
+/* Full-width image */
+.agent-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Overlay icons stay correct */
+.agent-image {
+  position: relative;
+}
+
+/* Agent info takes remaining space */
+.agent-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 28px;
+}
+
+/* Keep button at bottom */
+.agent-info .profile-link {
+  margin-top: auto;
+  background: #d0103a;
+  color: #fff;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 8px;
+  display: block;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.agent-info .profile-link:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* --- DESKTOP 3-COLUMN AUTO (even though you have 2) --- */
+@media (min-width: 1200px) {
+  .agents .row > div {
+    flex: 0 0 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+  }
+}
+
+/* --- DESKTOP 2-COLUMN (fits your current setup) --- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .agents .row > div {
+    flex: 0 0 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+/* --- TABLET: 1 per line --- */
+@media (max-width: 991px) {
+  .agents .row {
+    gap: 30px;
+  }
+  .agents .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* --- PREMIUM BUTTONS ONLY IN #about --- */
+#about .cta-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+/* Design commun premium */
+#about .cta-buttons a {
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* Premium Primary Button */
+#about .btn-primary {
+  background: linear-gradient(135deg, #d0103a 0%, #b00e32 100%);
+  color: #fff !important;
+}
+
+#about .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 22px rgba(208, 16, 58, 0.25);
+}
+
+/* Premium Outline Button */
+#about .btn-outline {
+  background: #fff;
+  border: 2px solid #d0103a;
+  color: #d0103a !important;
+}
+
+#about .btn-outline:hover {
+  background: #d0103a;
+  color: #fff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 22px rgba(208, 16, 58, 0.25);
+}
+
+/* --- Mobile : centré + stacked --- */
+@media (max-width: 768px) {
+  #about .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #about .cta-buttons a {
+    width: 100%;
+    max-width: 300px;
+  }
+}
