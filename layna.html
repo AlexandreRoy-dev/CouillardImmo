@@ -30,88 +30,40 @@
 
 <body class="layna-page">
 
-  <header id="header" class="header fixed-top">
+   <header id="header" class="header fixed-top">
     <!-- Main Header -->
     <div class="main-header">
       <div class="container-fluid container-xl">
         <div class="d-flex py-3 align-items-center justify-content-between">
 
           <!-- Logo -->
-          <a href="index.html" class="logo d-flex align-items-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.webp" alt=""> -->
-            <h1 class="sitename">Couillard Immobilier</h1>
-          </a>
+      <a href="index.html" class="logo d-flex align-items-center">
+  <img src="assets/img/logo_fr_1.svg" alt="Couillard Immobilier" class="header-logo">
+</a>
+
 
           <!-- Navigation -->
           <div class="header-nav">
             <nav id="navmenu" class="navmenu">
               <ul>
-                <li><a href="#hero">Accueil</a></li>
-
+                <li><a href="#hero" class="active">Accueil</a></li>
+                <li><a href="#portfolio">Propriétés</a></li>
+                <li><a href="#about">À propos</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">À propos</a></li>
+                <li>
+                <a href="#contact" class="btn-primary-header">Évaluation gratuite</a>
+              </li>
 
-                <li><a href="#contact">Contact</a></li>
               </ul>
               <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
           </div>
 
-          <!-- Actions -->
+          <!-- Actions (all e-commerce icônes retirées) -->
           <div class="header-actions d-flex align-items-center justify-content-end">
-
-            <!-- Account -->
-            <div class="dropdown account-dropdown">
-              <button class="header-action-btn" data-bs-toggle="dropdown">
-                <i class="bi bi-person"></i>
-              </button>
-              <div class="dropdown-menu">
-                <div class="dropdown-header">
-                  <h6>Welcome to <span class="sitename">Couillard Immobilier</span></h6>
-                  <p class="mb-0">Access account &amp; manage orders</p>
-                </div>
-                <div class="dropdown-body">
-                  <a class="dropdown-item d-flex align-items-center" href="account.html">
-                    <i class="bi bi-person-circle me-2"></i>
-                    <span>My Profile</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="account.html">
-                    <i class="bi bi-bag-check me-2"></i>
-                    <span>My Orders</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="account.html">
-                    <i class="bi bi-heart me-2"></i>
-                    <span>My Wishlist</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="account.html">
-                    <i class="bi bi-gear me-2"></i>
-                    <span>Settings</span>
-                  </a>
-                </div>
-                <div class="dropdown-footer">
-                  <a href="register.html" class="btn btn-primary w-100 mb-2">Sign In</a>
-                  <a href="login.html" class="btn btn-outline-primary w-100">Register</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Wishlist -->
-            <a href="account.html" class="header-action-btn d-none d-md-block">
-              <i class="bi bi-heart"></i>
-              <span class="badge">0</span>
-            </a>
-
-            <!-- Cart -->
-            <a href="cart.html" class="header-action-btn">
-              <i class="bi bi-cart3"></i>
-              <span class="badge">3</span>
-            </a>
-
-            <!-- Mobile Navigation Toggle -->
             <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
-
           </div>
+
         </div>
       </div>
     </div>
@@ -129,12 +81,9 @@
               <div class="hero-text" data-aos="fade-right" data-aos-delay="200">
                 <span class="season-tag">Layna Couillard</span>
                 <h1>Votre Courtière de confiance.</h1>
-                <p>Discover our curated collection of premium essentials designed for comfort and versatility. Timeless pieces that transition seamlessly from day to night.</p>
+                <p>Accompagnement humain et conseils avisés pour vendre ou acheter en toute confiance. Une approche personnalisée, transparente et axée sur vos besoins, du premier contact jusqu’à la signature.</p>
 
-                <div class="hero-badges">
-                  <span class="discount-badge">25% OFF</span>
-                  <span class="shipping-badge">Free Shipping on Orders $75+</span>
-                </div>
+              
 
                 <div class="hero-actions">
                   <a href="#" class="btn btn-primary">Voir mes propriétés</a>
@@ -145,7 +94,7 @@
 
             <div class="col-lg-6 order-lg-2 order-1">
               <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-                <img src="assets/img/product/product-f-1.webp" alt="Fall Collection" class="img-fluid">
+                <img src="assets/img/LaynaT.png" alt="Fall Collection" class="img-fluid">
                 <div class="image-accent"></div>
               </div>
             </div>
@@ -156,84 +105,105 @@
     </section><!-- /Hero 2 Section -->
 
     <!-- About 2 Section -->
-    <section id="about-2" class="about-2 section">
+   <!-- About 2 Section -->
+<section id="about-2" class="about-2 section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <div><span>Check Our</span> <span class="description-title">About</span></div>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>À propos</h2>
+    <div><span>Découvrez</span> <span class="description-title">Qui je suis</span></div>
+  </div>
+  <!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-5 align-items-center">
+    <div class="row gy-5 align-items-center">
 
-          <div class="col-lg-5 order-2 order-lg-1">
-            <div class="content">
-              <h3>Building Trust Through Excellence and Innovation</h3>
-              <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
-              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      <div class="col-lg-5 order-2 order-lg-1">
+        <div class="content">
+          <h3>Un service d’exception pour une tranquillité d’esprit absolue</h3>
 
-              <div class="features-list">
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-award"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h5>Industry Expertise</h5>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit.</p>
-                  </div>
-                </div>
+          <p class="lead">
+            Installée dans la Ville de Québec, j’offre un accompagnement haut de gamme fondé sur l’écoute,
+            la rigueur et une relation humaine privilégiée. Chaque propriété mérite une présentation
+            irréprochable, et chaque client mérite un service attentif, discret et professionnel.
+          </p>
 
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-shield-check"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h5>Proven Results</h5>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-                  </div>
-                </div>
+          
 
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-people"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h5>Client-Focused Approach</h5>
-                    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
-                  </div>
-                </div>
+          <div class="features-list">
+
+            <div class="feature-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-award"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Mise en marché haut de gamme</h5>
+                <p>
+                  Visuels impeccables, présentation soignée et stratégie de visibilité ciblée pour mettre en
+                  lumière le caractère unique de chaque propriété.
+                </p>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-7 order-1 order-lg-2">
-            <div class="image-grid">
-              <div class="grid-item grid-large" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">
+            <div class="feature-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-shield-check"></i>
               </div>
-              <div class="grid-item grid-small" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/img/about/about-square-2.webp" class="img-fluid" alt="">
-              </div>
-              <div class="stats-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="stat-item">
-                  <h4>15+</h4>
-                  <p>Years Experience</p>
-                </div>
-                <div class="stat-item">
-                  <h4>500+</h4>
-                  <p>Projects Completed</p>
-                </div>
+              <div class="feature-content">
+                <h5>Résultats remarquables</h5>
+                <p>
+                  Une approche professionnelle et méthodique qui mène à des décisions éclairées et à des
+                  résultats supérieurs, toujours dans votre meilleur intérêt.
+                </p>
               </div>
             </div>
-          </div>
 
+            <div class="feature-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-people"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Accompagnement personnalisé</h5>
+                <p>
+                  Une présence attentive à chaque étape, une écoute sincère et un service entièrement adapté à
+                  vos besoins pour une expérience réellement distinguée.
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
-
       </div>
 
-    </section><!-- /About 2 Section -->
+      <div class="col-lg-7 order-1 order-lg-2">
+        <div class="image-grid">
+          <div class="grid-item grid-large" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">
+          </div>
+          <div class="grid-item grid-small" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/img/about/about-square-2.webp" class="img-fluid" alt="">
+          </div>
+          <div class="stats-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat-item">
+              <h4>30+</h4>
+              <p>Années d’expérience</p>
+            </div>
+            <div class="stat-item">
+              <h4>Nombreux</h4>
+              <p>Clients accompagnés</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /About 2 Section -->
+<!-- /About 2 Section -->
 
     <!-- Post Slider Section -->
     <section id="post-slider" class="post-slider section">
@@ -365,65 +335,10 @@
               </article>
             </div><!-- End slide item -->
 
-            <div class="swiper-slide">
-              <article class="blog-card">
-                <div class="blog-image">
-                  <img src="assets/img/blog/blog-post-square-5.webp" alt="Blog Image" loading="lazy">
-                  <div class="category-badge">Lifestyle</div>
-                </div>
-                <div class="blog-content">
-                  <div class="author-info">
-                    <img src="assets/img/person/person-m-7.webp" alt="Author" class="author-avatar">
-                    <div class="author-details">
-                      <span class="author-name">Michael Chen</span>
-                      <span class="publish-date">February 18, 2025</span>
-                    </div>
-                  </div>
-                  <h3><a href="#">Excepteur sint occaecat cupidatat non proident sunt in culpa qui</a></h3>
-                  <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante etiam sit amet orci eget eros faucibus tincidunt.</p>
-                  <div class="blog-footer">
-                    <div class="reading-time">
-                      <i class="bi bi-clock"></i>
-                      <span>6 min read</span>
-                    </div>
-                    <a href="#" class="btn-read-more">
-                      <span>Continue Reading</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div><!-- End slide item -->
+       
+        
 
-            <div class="swiper-slide">
-              <article class="blog-card">
-                <div class="blog-image">
-                  <img src="assets/img/blog/blog-post-square-9.webp" alt="Blog Image" loading="lazy">
-                  <div class="category-badge">Marketing</div>
-                </div>
-                <div class="blog-content">
-                  <div class="author-info">
-                    <img src="assets/img/person/person-f-11.webp" alt="Author" class="author-avatar">
-                    <div class="author-details">
-                      <span class="author-name">Elena Rodriguez</span>
-                      <span class="publish-date">February 21, 2025</span>
-                    </div>
-                  </div>
-                  <h3><a href="#">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a></h3>
-                  <p>Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin lorem quis bibendum magna.</p>
-                  <div class="blog-footer">
-                    <div class="reading-time">
-                      <i class="bi bi-clock"></i>
-                      <span>4 min read</span>
-                    </div>
-                    <a href="#" class="btn-read-more">
-                      <span>Continue Reading</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div><!-- End slide item -->
+           
           </div>
 
           <div class="swiper-pagination"></div>
