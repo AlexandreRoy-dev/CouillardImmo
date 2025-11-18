@@ -6984,3 +6984,20 @@ section,
 .agents .agent-contact-premium .contact-line i {
   margin-top: 2px !important;
 }
+@media (max-width: 991px) {
+  .stats-card {
+    display: none !important;
+  }
+}
+@media (max-width: 991px) {
+  #hero .row {
+    min-height: 80vh;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  #hero .hero-content {
+    margin-top: 0;
+  }
+}
