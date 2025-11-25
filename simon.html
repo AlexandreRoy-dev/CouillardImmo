@@ -195,7 +195,7 @@
           </div>
 
           <div class="cta-container">
-            <a href="#contact" class="contact-btn">
+            <a href="#contact-3" class="contact-btn">
               <i class="bi bi-chat-dots"></i> Contactez-moi
             </a>
           </div>
@@ -227,89 +227,98 @@
 
 
    
-    <!-- Contact 3 Section -->
-    <section id="contact-3" class="contact-3 section">
+<!-- Contact 3 Section -->
+<section id="contact-3" class="contact-3 section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <div><span>Check Our</span> <span class="description-title">Contact</span></div>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Évaluation gratuite</h2>
+    <div><span>Obtenez votre</span> <span class="description-title">analyse professionnelle</span></div>
+  </div>
 
-      <div class="container">
+  <div class="container">
 
-        <div class="row gy-4">
+    <div class="row gy-4">
 
-          <div class="col-lg-4">
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div>
-                <h3>Address</h3>
-                <p>2847 Oak Street, San Francisco, CA 94102</p>
-              </div>
-            </div>
-
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-telephone"></i>
-              </div>
-              <div>
-                <h3>Call Me</h3>
-                <p>+1 (555) 234-5678</p>
-              </div>
-            </div>
-
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div>
-                <h3>Email Me</h3>
-                <p>alex@example.com</p>
-              </div>
-            </div>
-
+      <div class="col-lg-4">
+        <!-- Regions -->
+        <div class="info-item">
+          <div class="icon-wrapper">
+            <i class="bi bi-geo-alt"></i>
           </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
+          <div>
+            <h3>Régions desservies</h3>
+            <p>Québec & Beauce</p>
           </div>
+        </div>
 
+        <!-- Phone -->
+        <div class="info-item">
+          <div class="icon-wrapper">
+            <i class="bi bi-telephone"></i>
+          </div>
+          <div>
+            <h3>Téléphone</h3>
+            <p><a href="tel:+14188039192">(418) 803-9192</a></p>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="info-item">
+          <div class="icon-wrapper">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <div>
+            <h3>Courriel</h3>
+            <p><a href="mailto:simon.duo@hotmail.com">simon.duo@hotmail.com</a></p>
+          </div>
         </div>
 
       </div>
 
-    </section><!-- /Contact 3 Section -->
+      <div class="col-lg-8">
+        <form action="https://formspree.io/f/XXXX" method="POST" class="php-email-form">
+          
+          <!-- Optional hidden fields -->
+          <input type="hidden" name="_subject" value="Nouvelle demande — Évaluation gratuite">
+          <input type="hidden" name="_language" value="fr">
+
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Nom complet *" required>
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="Courriel *" required>
+            </div>
+
+            <div class="col-md-12">
+              <input type="tel" class="form-control" name="phone" placeholder="Téléphone (optionnel)">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Décrivez votre propriété ou votre projet *" required></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Envoi…</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Votre demande a été envoyée. Merci!</div>
+
+              <button type="submit">Envoyer ma demande</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 
   </main>
 
