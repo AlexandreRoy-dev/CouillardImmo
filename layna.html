@@ -25,7 +25,58 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+<style>
 
+  /* Make contact-form inherit php-email-form styling */
+.contact-form {
+  display: block;
+}
+
+.contact-form .form-control,
+.contact-form button,
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+}
+
+.contact-form .loading,
+.contact-form .error-message,
+.contact-form .sent-message {
+  display: none; /* keep them hidden */
+}
+
+/* Spacing & layout fixes */
+.contact-form .row > div {
+  margin-bottom: 1rem;
+}
+/* Primary button style for forms */
+.contact-form .btn-primary {
+  display: inline-block;
+  background: #e60023; /* rouge PD */
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-form .btn-primary:hover {
+  background: #b8001c; /* rouge foncé */
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 0, 35, 0.25);
+}
+
+.contact-form .btn-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+</style>
 </head>
 
 <body class="layna-page">
@@ -47,7 +98,7 @@
             <nav id="navmenu" class="navmenu">
               <ul>
                 <li><a href="#hero" class="active">Accueil</a></li>
-                <li><a href="#portfolio">Propriétés</a></li>
+                <li><a href="https://www.centris.ca/fr/courtier-immobilier~layna-couillard~proprio-direct/h9545">Propriétés</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#services">Services</a></li>
                 <li>
@@ -79,15 +130,15 @@
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-1 order-2">
               <div class="hero-text" data-aos="fade-right" data-aos-delay="200">
-                <span class="season-tag">Layna Couillard</span>
+                <span class="season-tag">Layna Couillard</span>     
                 <h1>Votre Courtière de confiance.</h1>
-                <p>Accompagnement humain et conseils avisés pour vendre ou acheter en toute confiance. Une approche personnalisée, transparente et axée sur vos besoins, du premier contact jusqu’à la signature.</p>
+                <p>Un accompagnement humain et des conseils avisés pour vendre ou acheter en toute confiance. Layna offre une approche personnalisée et transparente, entièrement axée sur vos besoins, du premier contact jusqu’à la signature. Grâce à son sens du service et à son souci d'offrir un service de qualité, elle devient une alliée essentielle dans toute démarche immobilière.</p>
 
               
 
                 <div class="hero-actions">
-                  <a href="#" class="btn btn-primary">Voir mes propriétés</a>
-                  <a href="#" class="btn btn-outline">Évaluation gratuite</a>
+                  <a href="https://www.centris.ca/fr/courtier-immobilier~layna-couillard~proprio-direct/h9545" class="btn btn-primary">Voir mes propriétés</a>
+                  <a href="#contact-2" class="btn btn-outline">Évaluation gratuite</a>
                 </div>
               </div>
             </div>
@@ -104,7 +155,7 @@
       </div>
     </section><!-- /Hero 2 Section -->
 
-    <!-- About 2 Section -->
+   
    <!-- About 2 Section -->
 <section id="about-2" class="about-2 section">
 
@@ -124,11 +175,11 @@
           <h3>Un service d’exception pour une tranquillité d’esprit absolue</h3>
 
           <p class="lead">
-            Installée dans la Ville de Québec, j’offre un accompagnement haut de gamme fondé sur l’écoute,
+            Installée dans la Ville de Québec, j’offre un accompagnement de qualité fondé sur l’écoute,
             la rigueur et une relation humaine privilégiée. Chaque propriété mérite une présentation
             irréprochable, et chaque client mérite un service attentif, discret et professionnel.
           </p>
-
+<br>
           
 
           <div class="features-list">
@@ -138,7 +189,7 @@
                 <i class="bi bi-award"></i>
               </div>
               <div class="feature-content">
-                <h5>Mise en marché haut de gamme</h5>
+                <h5>Mise en marché précis</h5>
                 <p>
                   Visuels impeccables, présentation soignée et stratégie de visibilité ciblée pour mettre en
                   lumière le caractère unique de chaque propriété.
@@ -179,21 +230,21 @@
       <div class="col-lg-7 order-1 order-lg-2">
         <div class="image-grid">
           <div class="grid-item grid-large" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">
+            <img src="assets/img/aboutlayna1.webp" class="img-fluid" alt="">
           </div>
           <div class="grid-item grid-small" data-aos="fade-up" data-aos-delay="300">
-            <img src="assets/img/about/about-square-2.webp" class="img-fluid" alt="">
+            <img src="assets/img/aboutlayna2.webp" class="img-fluid" alt="">
           </div>
-          <div class="stats-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="stat-item">
-              <h4>30+</h4>
-              <p>Années d’expérience</p>
-            </div>
-            <div class="stat-item">
-              <h4>Nombreux</h4>
-              <p>Clients accompagnés</p>
-            </div>
-          </div>
+         <div class="stats-card" data-aos="fade-up" data-aos-delay="400">
+
+  <div class="stat-item">
+    <img src="assets/img/logo_fr_1.svg" alt="Icon" class="stat-icon-img">
+  </div>
+
+ 
+
+</div>
+
         </div>
       </div>
 
@@ -203,234 +254,244 @@
 
 </section>
 <!-- /About 2 Section -->
-<!-- /About 2 Section -->
 
-    <!-- Post Slider Section -->
-    <section id="post-slider" class="post-slider section">
+  <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Post Slider</h2>
-        <div><span>Check Our</span> <span class="description-title">Post Slider</span></div>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Témoignages</h2>
+    <div><span>Écoutez</span> <span class="description-title">nos clients</span></div>
+  </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="blog-posts-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 4500
-              },
-              "slidesPerView": 1,
-              "spaceBetween": 40,
-              "centeredSlides": true,
-              "breakpoints": {
-                "768": {
-                  "slidesPerView": 1.5,
-                  "spaceBetween": 30
-                },
-                "1200": {
-                  "slidesPerView": 2.2,
-                  "spaceBetween": 40
-                }
-              },
-              "pagination": {
-                "el": ".swiper-pagination",
-                "clickable": true
-              }
-            }
-          </script>
+    <div class="testimonials-slider swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 800,
+          "autoplay": { "delay": 5000 },
+          "slidesPerView": 1,
+          "spaceBetween": 30,
+          "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
+          "breakpoints": {
+            "768": { "slidesPerView": 2 },
+            "1200": { "slidesPerView": 3 }
+          }
+        }
+      </script>
 
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <article class="blog-card">
-                <div class="blog-image">
-                  <img src="assets/img/blog/blog-post-square-3.webp" alt="Blog Image" loading="lazy">
-                  <div class="category-badge">Technology</div>
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial 1 – Gabrielle -->
+        <div class="swiper-slide">
+          <div class="testimonial-card uniform-card">
+            <div class="testimonial-content">
+              <p>
+                <i class="bi bi-quote quote-icon"></i>
+                « Layna m'a offert un service personnalisé et professionnel dans le processus d'achat 
+                de notre première maison. Toujours disponible et rassurante dans les démarches, Layna 
+                m'a grandement rassurée. Je recommande fortement leur service ! Merci encore! »
+              </p>
+            </div>
+            <div class="testimonial-profile no-photo">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="profile-info">
+                <div>
+                  <h3>Gabrielle</h3>
+                  <h4>Acheteuse</h4>
                 </div>
-                <div class="blog-content">
-                  <div class="author-info">
-                    <img src="assets/img/person/person-f-8.webp" alt="Author" class="author-avatar">
-                    <div class="author-details">
-                      <span class="author-name">Rebecca Martinez</span>
-                      <span class="publish-date">February 8, 2025</span>
-                    </div>
-                  </div>
-                  <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod</a></h3>
-                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                  <div class="blog-footer">
-                    <div class="reading-time">
-                      <i class="bi bi-clock"></i>
-                      <span>5 min read</span>
-                    </div>
-                    <a href="#" class="btn-read-more">
-                      <span>Continue Reading</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <article class="blog-card">
-                <div class="blog-image">
-                  <img src="assets/img/blog/blog-post-square-7.webp" alt="Blog Image" loading="lazy">
-                  <div class="category-badge">Design</div>
-                </div>
-                <div class="blog-content">
-                  <div class="author-info">
-                    <img src="assets/img/person/person-m-12.webp" alt="Author" class="author-avatar">
-                    <div class="author-details">
-                      <span class="author-name">Alexander Thompson</span>
-                      <span class="publish-date">February 12, 2025</span>
-                    </div>
-                  </div>
-                  <h3><a href="#">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris</a></h3>
-                  <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit.</p>
-                  <div class="blog-footer">
-                    <div class="reading-time">
-                      <i class="bi bi-clock"></i>
-                      <span>8 min read</span>
-                    </div>
-                    <a href="#" class="btn-read-more">
-                      <span>Continue Reading</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <article class="blog-card">
-                <div class="blog-image">
-                  <img src="assets/img/blog/blog-post-square-1.webp" alt="Blog Image" loading="lazy">
-                  <div class="category-badge">Business</div>
-                </div>
-                <div class="blog-content">
-                  <div class="author-info">
-                    <img src="assets/img/person/person-f-3.webp" alt="Author" class="author-avatar">
-                    <div class="author-details">
-                      <span class="author-name">Sophia Williams</span>
-                      <span class="publish-date">February 15, 2025</span>
-                    </div>
-                  </div>
-                  <h3><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</a></h3>
-                  <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum ac turpis.</p>
-                  <div class="blog-footer">
-                    <div class="reading-time">
-                      <i class="bi bi-clock"></i>
-                      <span>3 min read</span>
-                    </div>
-                    <a href="#" class="btn-read-more">
-                      <span>Continue Reading</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div><!-- End slide item -->
-
-       
-        
-
-           
+              </div>
+            </div>
           </div>
+        </div>
 
-          <div class="swiper-pagination"></div>
+        <!-- Testimonial 2 – Audrey -->
+        <div class="swiper-slide">
+          <div class="testimonial-card uniform-card">
+            <div class="testimonial-content">
+              <p>
+                <i class="bi bi-quote quote-icon"></i>
+                « Un service impeccable. Layna était présente, rassurante et disposée à chacune de 
+                nos questions. Nous nous sommes sentis accompagnés, soutenus et pris en charge. Merci 
+                énormément pour ton excellent travail de qualité. »
+              </p>
+            </div>
+            <div class="testimonial-profile no-photo">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="profile-info">
+                <div>
+                  <h3>Audrey</h3>
+                  <h4>Cliente</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 – Michèle -->
+        <div class="swiper-slide">
+          <div class="testimonial-card uniform-card">
+            <div class="testimonial-content">
+              <p>
+                <i class="bi bi-quote quote-icon"></i>
+                « Merci pour votre professionnalisme et votre grande disponibilité ! Je suis très 
+                contente. Je vous recommanderai chaudement, c'est certain ! »
+              </p>
+            </div>
+            <div class="testimonial-profile no-photo">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="profile-info">
+                <div>
+                  <h3>Michèle</h3>
+                  <h4>Cliente</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 – Audrey C -->
+        <div class="swiper-slide">
+          <div class="testimonial-card uniform-card">
+            <div class="testimonial-content">
+              <p>
+                <i class="bi bi-quote quote-icon"></i>
+                « Tellement satisfaite de l’accompagnement de Layna dans notre projet d’achat de maison. 
+                Ça a été une longue aventure mais elle a su être très patiente avec nous, à l’écoute, 
+                présente et toujours disponible pour nous. Nous recommandons sans hésiter ses services. 
+                Encore un énorme merci de nous avoir accompagnés pour l’achat de notre première maison! 
+                Un service hors pair! Merci énormément!!! »
+              </p>
+            </div>
+            <div class="testimonial-profile no-photo">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="profile-info">
+                <div>
+                  <h3>Audrey C.</h3>
+                  <h4>Acheteuse</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
 
-    </section><!-- /Post Slider Section -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
 
     <!-- Contact 2 Section -->
-    <section id="contact-2" class="contact-2 section">
+<section id="contact-2" class="contact-3 section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <div><span>Check Our</span> <span class="description-title">Contact</span></div>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Évaluation gratuite</h2>
+    <div><span>Obtenez votre</span> <span class="description-title">analyse professionnelle</span></div>
+  </div>
 
-      <div class="container">
+  <div class="container">
 
-        <div class="row gy-4">
+    <div class="row gy-4">
 
-          <div class="col-lg-4">
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div>
-                <h3>Address</h3>
-                <p>2847 Oak Street, San Francisco, CA 94102</p>
-              </div>
-            </div>
-
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-telephone"></i>
-              </div>
-              <div>
-                <h3>Call Me</h3>
-                <p>+1 (555) 234-5678</p>
-              </div>
-            </div>
-
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div>
-                <h3>Email Me</h3>
-                <p>alex@example.com</p>
-              </div>
-            </div>
-
+      <div class="col-lg-4">
+        <!-- Regions -->
+        <div class="info-item">
+          <div class="icon-wrapper">
+            <i class="bi bi-geo-alt"></i>
           </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
+          <div>
+            <h3>Régions desservies</h3>
+            <p>Ville de Québec, région de la Jacques-Cartier, Côte-de-Beaupré, Lévis</p>
           </div>
+        </div>
 
+        <!-- Phone -->
+        <div class="info-item">
+          <div class="icon-wrapper">
+            <i class="bi bi-telephone"></i>
+          </div>
+          <div>
+            <h3>Téléphone</h3>
+            <p><a href="tel:+14188038632">(418) 803-8632</a></p>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="info-item">
+          <div class="icon-wrapper">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <div>
+            <h3>Courriel</h3>
+            <p><a href="mailto:Layna.couillard@hotmail.com ">Layna.couillard@hotmail.com </a></p>
+          </div>
         </div>
 
       </div>
 
-    </section><!-- /Contact 2 Section -->
+      <div class="col-lg-8">
+   <form action="https://formspree.io/f/xdkrnlqp" method="POST" class="contact-form">
+          
+  <!-- Optional hidden fields -->
+  <input type="hidden" name="_subject" value="Nouvelle demande — Évaluation gratuite">
+  <input type="hidden" name="_language" value="fr">
+
+  <div class="row gy-4">
+
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Nom complet *" required>
+    </div>
+
+    <div class="col-md-6">
+      <input type="email" class="form-control" name="email" placeholder="Courriel *" required>
+    </div>
+
+    <div class="col-md-12">
+      <input type="tel" class="form-control" name="phone" placeholder="Téléphone *" required>
+    </div>
+
+    <div class="col-md-12">
+      <textarea class="form-control" name="message" rows="6" placeholder="Décrivez votre propriété ou votre projet *" required></textarea>
+    </div>
+
+    <div class="col-md-12 text-center">
+      <button class="btn-primary" type="submit">Envoyer ma demande</button>
+    </div>
+
+  </div>
+</form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
   </main>
 
@@ -444,14 +505,14 @@
             <a href="index.html" class="logo d-flex align-items-center mb-3">
               <span class="sitename">Couillard Immobilier</span>
             </a>
-            <p class="tagline">Innovating the digital landscape with elegant solutions and timeless design.</p>
+            <p class="tagline">
+              Groupe de courtiers immobiliers offrant un accompagnement de qualité pour vos
+              transactions résidentielles et projets d’investissement.
+            </p>
 
             <div class="social-links mt-4">
-              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100075509334329" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+           
             </div>
           </div>
         </div>
@@ -460,40 +521,32 @@
           <div class="footer-links-grid">
             <div class="row">
               <div class="col-6 col-md-4">
-                <h5>Company</h5>
+                <h5>Le groupe</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Newsroom</a></li>
+                  <li><a href="#about-2">À propos</a></li>
+                  <li><a href="index.html#agents">Nos courtiers</a></li>
+                  <li><a href="https://www.centris.ca/fr/courtier-immobilier~layna-couillard~proprio-direct/h9545">Propriétés</a></li>
+                  <!-- <li><a href="#testimonials">Témoignages</a></li> -->
                 </ul>
               </div>
               <div class="col-6 col-md-4">
                 <h5>Services</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">Web Development</a></li>
-                  <li><a href="#">UI/UX Design</a></li>
-                  <li><a href="#">Digital Strategy</a></li>
-                  <li><a href="#">Branding</a></li>
+                  <li><a href="index.html#services">Achat de propriété</a></li>
+                  <li><a href="index.html#services">Vente de propriété</a></li>
+              
+                  <li><a href="#contact-2">Évaluation gratuite</a></li>
                 </ul>
               </div>
-              <div class="col-6 col-md-4">
-                <h5>Support</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Help Center</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                </ul>
-              </div>
+              
             </div>
           </div>
         </div>
 
         <div class="col-lg-2">
           <div class="footer-cta">
-            <h5>Let's Connect</h5>
-            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+            <h5>Parlons de votre projet</h5>
+            <a href="#contact-2" class="btn btn-outline">Évaluation gratuite</a>
           </div>
         </div>
 
@@ -505,8 +558,8 @@
         <div class="row">
           <div class="col-12">
             <div class="footer-bottom-content">
-              <p class="mb-0">© <span class="sitename">Couillard Immobilier</span>. All rights reserved.</p>
-
+              <p class="mb-0">© <span class="sitename">Couillard Immobilier</span>. Tous droits réservés.</p>
+              <p class="mb-0"><span class="sitename">Conception web par</span> <a href="https://roymarketing.ca/">Roy Marketing</a> </p>
             </div>
           </div>
         </div>
@@ -514,6 +567,7 @@
     </div>
 
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -523,7 +577,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

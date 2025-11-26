@@ -7093,3 +7093,46 @@ section,
   max-width: 820px;
   margin: 0 auto;
 }
+.stat-icon-img {
+  width: 200px; 
+  height: 200px;
+  object-fit: contain;
+  display: block;
+}
+/* Force all testimonial cards to same height */
+.uniform-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure content stretches */
+.testimonial-content {
+  flex-grow: 1;
+}
+
+/* Remove image space and align profile section nicely */
+.testimonial-profile.no-photo .profile-info img {
+  display: none;
+}
+
+.testimonial-profile.no-photo .profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Optional: make profile section cleaner without photo padding */
+.testimonial-profile.no-photo {
+  margin-top: 20px;
+}
+
+/* Prevent card height from shrinking with long text */
+.swiper-slide {
+  height: auto;
+}
+.call-to-action .image-container img {
+  max-width: 120%;
+  transform: scale(1.15);
+  transform-origin: center;
+}

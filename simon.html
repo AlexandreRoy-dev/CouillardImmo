@@ -25,7 +25,35 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+<style>
+  /* Primary Form Button */
+.btn-form-primary {
+  display: inline-block;
+  background: #e60023; /* red PD */
+  color: #fff;
+  padding: 14px 34px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
 
+.btn-form-primary:hover {
+  background: #b8001c; /* darker red */
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(230, 0, 35, 0.25);
+}
+
+.btn-form-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+</style>
 </head>
 
 <body class="simon-page">
@@ -90,9 +118,7 @@
           </h2>
 
           <p data-aos="fade-up" data-aos-delay="400">
-            Courtier d’expérience, j’accompagne mes clients avec une approche humaine, rigoureuse 
-            et axée sur les résultats. Que ce soit en ville ou en région, je mets mon expertise au 
-            service de vos projets afin de vous guider avec confiance, transparence et précision.
+           Simon, courtier immobilier depuis 2010, est reconnu pour sa grande expertise. Il a su établir des liens de confiance avec ses clients grâce à sa rigueur et sa transparence. Que ce soit en ville ou en région, Simon met son savoir-faire au service de vos projets en vous guidant avec confiance, transparence et justesse afin de vous aider à atteindre vos objectifs.
           </p>
 
           <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
@@ -277,40 +303,37 @@
       </div>
 
       <div class="col-lg-8">
-        <form action="https://formspree.io/f/XXXX" method="POST" class="php-email-form">
+        <form action="https://formspree.io/f/xdkrnlqp" method="POST" class="contact-form">
           
-          <!-- Optional hidden fields -->
-          <input type="hidden" name="_subject" value="Nouvelle demande — Évaluation gratuite">
-          <input type="hidden" name="_language" value="fr">
+  <!-- Optional hidden fields -->
+  <input type="hidden" name="_subject" value="Nouvelle demande — Évaluation gratuite">
+  <input type="hidden" name="_language" value="fr">
 
-          <div class="row gy-4">
+  <div class="row gy-4">
 
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Nom complet *" required>
-            </div>
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Nom complet *" required>
+    </div>
 
-            <div class="col-md-6">
-              <input type="email" class="form-control" name="email" placeholder="Courriel *" required>
-            </div>
+    <div class="col-md-6">
+      <input type="email" class="form-control" name="email" placeholder="Courriel *" required>
+    </div>
 
-            <div class="col-md-12">
-              <input type="tel" class="form-control" name="phone" placeholder="Téléphone (optionnel)">
-            </div>
+    <div class="col-md-12">
+      <input type="tel" class="form-control" name="phone" placeholder="Téléphone (optionnel)">
+    </div>
 
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Décrivez votre propriété ou votre projet *" required></textarea>
-            </div>
+    <div class="col-md-12">
+      <textarea class="form-control" name="message" rows="6" placeholder="Décrivez votre propriété ou votre projet *" required></textarea>
+    </div>
 
-            <div class="col-md-12 text-center">
-              <div class="loading">Envoi…</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Votre demande a été envoyée. Merci!</div>
+    <div class="col-md-12 text-center">
+      <button class="btn-form-primary" type="submit">Envoyer ma demande</button>
+    </div>
 
-              <button type="submit">Envoyer ma demande</button>
-            </div>
+  </div>
+</form>
 
-          </div>
-        </form>
       </div>
 
     </div>
@@ -403,7 +426,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
