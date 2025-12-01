@@ -53,50 +53,56 @@
   box-shadow: none;
 }
 
+
+.mobile-nav-toggle {
+  color: #222 !important;      /* Dark grey */
+  font-size: 32px;             /* Larger and visible */
+  cursor: pointer;
+  z-index: 9999;
+}
+
+
 </style>
 </head>
 
 <body class="simon-page">
 
 
-   <header id="header" class="header fixed-top">
-    <!-- Main Header -->
-    <div class="main-header">
-      <div class="container-fluid container-xl">
-        <div class="d-flex py-3 align-items-center justify-content-between">
+<header id="header" class="header fixed-top">
+  <div class="main-header">
+    <div class="container-fluid container-xl">
+      <div class="d-flex py-3 align-items-center justify-content-between">
 
-          <!-- Logo -->
-      <a href="index.html" class="logo d-flex align-items-center">
-  <img src="assets/img/logo_fr_1.svg" alt="Couillard Immobilier" class="header-logo">
-</a>
+        <!-- Logo -->
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo_fr_1.svg" alt="Couillard Immobilier" class="header-logo">
+        </a>
 
+        <!-- Navigation -->
+        <div class="header-nav d-flex align-items-center">
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="./index.html" class="active">Accueil</a></li>
+              <li><a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1">Propriétés</a></li>
+              <li><a href="index.html#about">À propos</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#contact" class="btn-primary-header">Évaluation gratuite</a></li>
+            </ul>
 
-          <!-- Navigation -->
-          <div class="header-nav">
-            <nav id="navmenu" class="navmenu">
-              <ul>
-                <li><a href="./index.html" class="active">Accueil</a></li>
-                <li><a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1">Propriétés</a></li>
-                <li><a href="index.html#about">À propos</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li>
-                <a href="index.html#contact" class="btn-primary-header">Évaluation gratuite</a>
-              </li>
-
-              </ul>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-          </div>
-
-          <!-- Actions (all e-commerce icônes retirées) -->
-          <div class="header-actions d-flex align-items-center justify-content-end">
-            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
-          </div>
-
+            <!-- visible hamburger -->
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
         </div>
+
+        <!-- Actions -->
+        <div class="header-actions d-flex align-items-center justify-content-end"></div>
+
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
+
 
   <main class="main">
 
@@ -114,7 +120,7 @@
           </h1>
 
           <h2 data-aos="fade-up" data-aos-delay="300">
-            Courtier immobilier – Québec & Beauce
+            Courtier immobilier – Québec, Beauce et Lévis
           </h2>
 
           <p data-aos="fade-up" data-aos-delay="400">
@@ -148,7 +154,7 @@
 
               <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
                 <i class="bi bi-geo-alt"></i>
-                <span>Québec & Beauce</span>
+                <span>Québec, Beauce et Lévis</span>
               </div>
 
               <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
@@ -198,7 +204,7 @@
             <div class="info-card">
               <i class="bi bi-geo-alt-fill"></i>
               <h5>Régions</h5>
-              <p>Québec et Beauce</p>
+              <p>Québec, Beauce et Lévis</p>
             </div>
 
             <div class="info-card">
@@ -274,7 +280,7 @@
           </div>
           <div>
             <h3>Régions desservies</h3>
-            <p>Québec & Beauce</p>
+            <p>Québec, Beauce et Lévis</p>
           </div>
         </div>
 
@@ -356,7 +362,7 @@
               <span class="sitename">Couillard Immobilier</span>
             </a>
             <p class="tagline">
-              Groupe de courtiers immobiliers offrant un accompagnement haut de gamme pour vos
+              Groupe de courtiers immobiliers offrant un accompagnement de qualité pour vos
               transactions résidentielles et projets d’investissement.
             </p>
 

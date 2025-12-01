@@ -44,42 +44,54 @@
         <nav id="navmenu" class="navmenu">
           <ul>
 
-            <!-- Accueil -->
-            <li><a href="#hero" class="active">Accueil</a></li>
+  <!-- Accueil -->
+  <li><a href="#hero" class="active">Accueil</a></li>
 
-            <!-- Propriétés Dropdown -->
-            <li class="dropdown">
-              <a href="#portfolio" class="dropdown-toggle">
-                Propriétés <i class="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
-              <ul>
-                <li><a href="https://www.centris.ca/fr/courtier-immobilier~layna-couillard~proprio-direct/h9545">Propriétés de Layna</a></li>
-                <li><a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1">Propriétés de Simon</a></li>
-              </ul>
-            </li>
+  <!-- MOBILE: Propriétés direct link -->
+  <li class="d-xl-none">
+    <a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1">
+      Propriétés
+    </a>
+  </li>
 
-            <!-- Équipe Dropdown -->
-            <li class="dropdown">
-              <a href="#equipe" class="dropdown-toggle">
-                Équipe <i class="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
-              <ul>
-                <li><a href="./layna.html">Layna</a></li>
-                <li><a href="./simon.html">Simon</a></li>
-              </ul>
-            </li>
+  <!-- DESKTOP: Propriétés dropdown -->
+  <li class="dropdown d-none d-xl-block">
+    <a href="#portfolio" class="dropdown-toggle">
+      Propriétés <i class="bi bi-chevron-down dropdown-indicator"></i>
+    </a>
+    <ul>
+      <li><a href="https://www.centris.ca/fr/courtier-immobilier~layna-couillard~proprio-direct/h9545">Propriétés de Layna</a></li>
+      <li><a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1">Propriétés de Simon</a></li>
+    </ul>
+  </li>
 
-            <!-- À propos -->
-            <li><a href="#about">À propos</a></li>
+  <!-- MOBILE: Équipe direct link -->
+  <li class="d-xl-none">
+    <a href="#agents">Équipe</a>
+  </li>
 
-            <!-- Services -->
-            <li><a href="#services">Services</a></li>
+  <!-- DESKTOP: Équipe dropdown -->
+  <li class="dropdown d-none d-xl-block">
+    <a href="#equipe" class="dropdown-toggle">
+      Équipe <i class="bi bi-chevron-down dropdown-indicator"></i>
+    </a>
+    <ul>
+      <li><a href="./layna.html">Layna</a></li>
+      <li><a href="./simon.html">Simon</a></li>
+    </ul>
+  </li>
 
-            <!-- CTA -->
-            <li>
-              <a href="#contact" class="btn-primary-header">Évaluation gratuite</a>
-            </li>
-          </ul>
+  <!-- À propos -->
+  <li><a href="#about">À propos</a></li>
+
+  <!-- Services -->
+  <li><a href="#services">Services</a></li>
+
+  <!-- CTA -->
+  <li><a href="#contact" class="btn-primary-header">Évaluation gratuite</a></li>
+
+</ul>
+
 
           <!-- Mobile nav toggle -->
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -89,6 +101,7 @@
     </div>
   </div>
 </header>
+
 
 
 
@@ -238,10 +251,7 @@
               <div class="image-grid">
                 <div class="grid-item large">
                   <img src="assets/img/real-estate/property-exterior-5.webp" alt="Propriété de prestige" class="img-fluid" loading="lazy">
-                  <div class="overlay-badge">
-                    <i class="bi bi-star-fill"></i>
-                    <span>Collection prestige</span>
-                  </div>
+                  
                 </div>
                 <div class="grid-item small-top">
                   <img src="assets/img/real-estate/property-interior-3.webp" alt="Intérieur raffiné" class="img-fluid" loading="lazy">
@@ -369,102 +379,141 @@
 </section>
 
 
-    <!-- Consultation Form Section -->
-    <section id="consultation-form" class="consultation-form section">
+<!-- Consultation Form Section -->
+<section id="consultation-form" class="consultation-form section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Offres immobilières exclusives</h2>
-        <div><span>Recevez</span> <span class="description-title">nos opportunités</span></div>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Offres immobilières exclusives</h2>
+    <div><span>Recevez</span> <span class="description-title">nos opportunités</span></div>
+  </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="cta-wrapper">
-          <div class="row align-items-center">
-            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-              <div class="cta-content">
-                <h2>Recevez nos coups de cœur et opportunités d’investissement avant tout le monde.</h2>
-                <p>
-                  Inscrivez-vous pour recevoir une sélection personnalisée de propriétés : résidences
-                  familiales, propriétés de prestige, immeubles locatifs et opportunités exclusives
-                  Proprio Direct. Nos courtiers filtrent pour vous ce qui correspond réellement à vos
-                  critères, à votre budget et à votre vision.
-                </p>
-               
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="cta-wrapper">
+      <div class="row align-items-center">
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+          <div class="cta-content">
+            <h2>Recevez nos coups de cœur et opportunités d’investissement avant tout le monde.</h2>
+            <p>
+              Inscrivez-vous pour recevoir une sélection personnalisée de propriétés : résidences
+              familiales, propriétés de prestige, immeubles locatifs et opportunités exclusives
+              Proprio Direct. Nos courtiers filtrent pour vous ce qui correspond réellement à vos
+              critères, à votre budget et à votre vision.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="cta-form">
+
+            <h3>Recevoir des offres immobilières exclusives</h3>
+            <p>
+              Remplissez ce court formulaire pour recevoir en priorité 
+              les nouvelles propriétés correspondant à vos critères.
+            </p>
+
+            <form action="https://formspree.io/f/mkglwpwa" method="POST">
+
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Votre nom complet" required>
               </div>
-            </div>
-            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
-  <div class="cta-form">
 
-    <h3>Recevoir des offres immobilières exclusives</h3>
-    <p>
-      Remplissez ce court formulaire pour recevoir en priorité 
-      les nouvelles propriétés correspondant à vos critères.
-    </p>
+              <div class="form-group mt-3">
+                <input type="email" class="form-control" name="email" placeholder="Votre courriel" required>
+              </div>
 
-  <form action="https://formspree.io/f/mkglwpwa" method="POST">
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="phone" placeholder="Votre téléphone">
+              </div>
 
-  <div class="form-group">
-    <input type="text" name="name" class="form-control" placeholder="Votre nom complet" required>
-  </div>
+              <!-- Budget -->
+              <div class="form-group mt-3">
+                <select class="form-control" name="budget" required>
+                  <option value="" disabled selected>Budget recherché</option>
+                  <option value="200 000 $ et moins">200 000 $ et moins</option>
+                  <option value="200 000 $ à 400 000 $">200 000 $ à 400 000 $</option>
+                  <option value="400 000 $ à 600 000 $">400 000 $ à 600 000 $</option>
+                  <option value="600 000 $ à 1 000 000 $">600 000 $ à 1 000 000 $</option>
+                  <option value="1 000 000 $ à 2 000 000 $">1 000 000 $ à 2 000 000 $</option>
+                  <option value="2 000 000 $ et plus">2 000 000 $ et plus</option>
+                </select>
+              </div>
 
-  <div class="form-group mt-3">
-    <input type="email" class="form-control" name="email" placeholder="Votre courriel" required>
-  </div>
+              <!-- Nombre de chambres -->
+              <div class="form-group mt-3">
+                <select class="form-control" name="chambres" required>
+                  <option value="" disabled selected>Nombre de chambres</option>
+                  <option value="1 chambre">1 chambre</option>
+                  <option value="2 chambres">2 chambres</option>
+                  <option value="3 chambres">3 chambres</option>
+                  <option value="4 chambres">4 chambres</option>
+                  <option value="5 chambres et plus">5 chambres et plus</option>
+                </select>
+              </div>
 
-  <div class="form-group mt-3">
-    <input type="text" class="form-control" name="phone" placeholder="Votre téléphone">
-  </div>
+              <!-- Type de propriété -->
+      <div class="form-group mt-3">
+  <select class="form-control" name="property_type" required>
+    <option value="" disabled selected>Type de propriété</option>
 
-  <!-- Budget -->
-  <div class="form-group mt-3">
-    <select class="form-control" name="budget" required>
-      <option value="" disabled selected>Budget recherché</option>
-      <option value="200 000 $ à 400 000 $">200 000 $ à 400 000 $</option>
-      <option value="400 000 $ à 600 000 $">400 000 $ à 600 000 $</option>
-      <option value="600 000 $ à 1 000 000 $">600 000 $ à 1 000 000 $</option>
-      <option value="1 000 000 $ à 2 000 000 $">1 000 000 $ à 2 000 000 $</option>
-      <option value="2 000 000 $ et plus">2 000 000 $ et plus</option>
-    </select>
-  </div>
+    <option value="Maison de plain-pied">Maison de plain-pied</option>
+    <option value="Maison à étages">Maison à étages</option>
+    <option value="Maison en rangée">Maison en rangée</option>
+    <option value="Jumelé">Jumelé</option>
+    <option value="Condo">Condo</option>
+    <option value="Duplex">Duplex</option>
+    <option value="Triplex">Triplex</option>
+    <option value="Quadruplex">Quadruplex</option>
+    <option value="Quintuplex et plus">Quintuplex et plus</option>
+    <option value="Terrain">Terrain</option>
+    <option value="Commercial">Commercial</option>
+    <option value="Autre">Autre</option>
 
-  <!-- Type de propriété -->
-  <div class="form-group mt-3">
-    <select class="form-control" name="property_type" required>
-      <option value="" disabled selected>Type de propriété</option>
-      <option value="Résidentiel">Résidentiel</option>
-      <option value="Commercial">Commercial</option>
-      <option value="Multilogement">Multilogement</option>
-    </select>
-  </div>
-
-  <!-- Secteur recherché -->
-  <div class="form-group mt-3">
-    <select class="form-control" name="sector" required>
-      <option value="" disabled selected>Secteur recherché</option>
-      <option value="Ville de Québec">Ville de Québec</option>
-      <option value="Région de La Jacques-Cartier">Région de La Jacques-Cartier</option>
-      <option value="Côte-de-Beaupré">Côte-de-Beaupré</option>
-      <option value="Lévis">Lévis</option>
-      <option value="Beauce">Beauce</option>
-    </select>
-  </div>
-
-  <div class="text-center mt-4">
-    <button type="submit">Recevoir les offres</button>
-  </div>
-
-</form>
-
-
-
-  </div>
+  </select>
 </div>
+
+
+              <!-- Secteur recherché -->
+              <div class="form-group mt-3">
+                <select class="form-control" name="sector" required>
+                  <option value="" disabled selected>Secteur recherché</option>
+                  <option value="Ville de Québec">Ville de Québec</option>
+                  <option value="Région de La Jacques-Cartier">Région de La Jacques-Cartier</option>
+                  <option value="Côte-de-Beaupré">Côte-de-Beaupré</option>
+                  <option value="Lévis">Lévis</option>
+                  <option value="Beauce">Beauce</option>
+                </select>
+              </div>
+
+              <!-- Êtes-vous en contrat d’achat avec un courtier ? -->
+              <div class="form-group mt-4">
+                <label class="mb-2">Êtes-vous en contrat d’achat avec un courtier ?</label>
+                <select class="form-control" name="contrat_achat" required>
+                  <option value="" disabled selected>Choisir une option</option>
+                  <option value="Oui">Oui</option>
+                  <option value="Non">Non</option>
+                </select>
+              </div>
+
+              <!-- Éléments supplémentaires -->
+              <div class="form-group mt-3">
+                <textarea name="details" class="form-control" rows="4" placeholder="Précisez des éléments supplémentaires (critères, besoins, préférences)…"></textarea>
+              </div>
+
+              <div class="text-center mt-4">
+                <button type="submit">Recevoir les offres</button>
+              </div>
+
+            </form>
 
           </div>
         </div>
+
       </div>
-    </section><!-- /Consultation Form Section -->
+    </div>
+  </div>
+</section>
+
 
     <!-- Services Section -->
     <section class="real-estate-services-3 services-2 section" id="services">
@@ -781,7 +830,7 @@
         <div class="contact-sidebar">
 
           <div class="contact-header">
-            <h3>Coordonnées du groupe</h3>
+            <h3>Coordonnées de l'équipe</h3>
             <p>
               Nos courtiers couvrent plusieurs régions du Québec. Nous vous dirigerons
               vers le professionnel le mieux placé pour votre secteur.
@@ -825,7 +874,7 @@
               </div>
               <div class="contact-details">
                 <span class="method-label">Heures d’ouverture</span>
-                <p>Lundi au vendredi : 9 h – 18 h<br>Samedi : sur rendez-vous</p>
+                <p>Lundi au vendredi : 9 h – 18 h<br>Samedi et Dimanche : sur rendez-vous</p>
               </div>
             </div>
           </div>

@@ -75,50 +75,54 @@
   transform: translateY(0);
   box-shadow: none;
 }
+.mobile-nav-toggle {
+  color: #222 !important; 
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 9999;
+}
 
 </style>
 </head>
 
 <body class="layna-page">
 
-   <header id="header" class="header fixed-top">
-    <!-- Main Header -->
-    <div class="main-header">
-      <div class="container-fluid container-xl">
-        <div class="d-flex py-3 align-items-center justify-content-between">
+<header id="header" class="header fixed-top">
+  <div class="main-header">
+    <div class="container-fluid container-xl">
+      <div class="d-flex py-3 align-items-center justify-content-between">
 
-          <!-- Logo -->
-      <a href="index.html" class="logo d-flex align-items-center">
-  <img src="assets/img/logo_fr_1.svg" alt="Couillard Immobilier" class="header-logo">
-</a>
+        <!-- Logo -->
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo_fr_1.svg" alt="Couillard Immobilier" class="header-logo">
+        </a>
 
+        <!-- Navigation -->
+        <div class="header-nav d-flex align-items-center">
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.html#hero" class="active">Accueil</a></li>
+              <li><a href="https://www.centris.ca/fr/courtier-immobilier~layna-couillard~proprio-direct/h9545">Propriétés</a></li>
+              <li><a href="index.html#about">À propos</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="#contact-2" class="btn-primary-header">Évaluation gratuite</a></li>
+            </ul>
 
-          <!-- Navigation -->
-          <div class="header-nav">
-            <nav id="navmenu" class="navmenu">
-              <ul>
-                <li><a href="#hero" class="active">Accueil</a></li>
-                <li><a href="https://www.centris.ca/fr/courtier-immobilier~layna-couillard~proprio-direct/h9545">Propriétés</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#services">Services</a></li>
-                <li>
-                <a href="#contact" class="btn-primary-header">Évaluation gratuite</a>
-              </li>
-
-              </ul>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-          </div>
-
-          <!-- Actions (all e-commerce icônes retirées) -->
-          <div class="header-actions d-flex align-items-center justify-content-end">
-            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
-          </div>
-
+            <!-- Single working hamburger -->
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
         </div>
+
+        <!-- EMPTY actions -->
+        <div class="header-actions d-flex align-items-center justify-content-end">
+          <!-- must stay empty -->
+        </div>
+
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
 
   <main class="main">
 
@@ -132,7 +136,7 @@
               <div class="hero-text" data-aos="fade-right" data-aos-delay="200">
                 <span class="season-tag">Layna Couillard</span>     
                 <h1>Votre Courtière de confiance.</h1>
-                <p>Un accompagnement humain et des conseils avisés pour vendre ou acheter en toute confiance. Layna offre une approche personnalisée et transparente, entièrement axée sur vos besoins, du premier contact jusqu’à la signature. Grâce à son sens du service et à son souci d'offrir un service de qualité, elle devient une alliée essentielle dans toute démarche immobilière.</p>
+                <p>Un accompagnement humain et des conseils avisés pour vendre ou acheter en toute confiance. Layna offre une approche personnalisée et transparente, entièrement axée sur vos besoins, du premier contact jusqu’à la signature. Grâce à son sens de l'accompagnement et à son souci d'offrir un service de qualité, elle devient une alliée essentielle dans toute démarche immobilière.</p>
 
               
 
