@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17751777472"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17751777472');
+  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Guide pour les premiers acheteurs - Simon Couillard</title>
+  <meta name="description" content="Acheter sa première maison à Québec? Voici les erreurs à éviter concernant la mise de fonds, l'inspection et les frais de démarrage.">
+  <meta name="keywords" content="premier acheteur québec, hypothèque, inspection bâtiment, courtier achat maison">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* --- Shared Buttons --- */
+    .btn-form-primary {
+      display: inline-block;
+      background: #e60023;
+      color: #fff;
+      padding: 14px 34px;
+      border-radius: 6px;
+      border: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 15px;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-form-primary:hover {
+      background: #b8001c;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(230, 0, 35, 0.25);
+    }
+
+    .mobile-nav-toggle {
+      color: #222 !important;
+      font-size: 32px;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    /* --- Page Title Section --- */
+    .page-title {
+      background-color: #f4f4f4;
+      padding: 120px 0 60px 0; /* Top padding accounts for fixed header */
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .page-title h1 {
+      font-weight: 800;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    .breadcrumb {
+      justify-content: center;
+      background: transparent;
+      padding: 0;
+    }
+    
+    .breadcrumb-item a {
+      color: #e60023;
+      text-decoration: none;
+    }
+
+    .breadcrumb-item.active {
+      color: #666;
+    }
+
+    /* --- Blog Details Styles --- */
+    .blog-details .article-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    .blog-details .meta-top {
+      margin-bottom: 20px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .blog-details .meta-top i {
+      color: #e60023;
+      margin-right: 5px;
+    }
+
+    .blog-details .meta-top span {
+      margin-right: 20px;
+    }
+
+    .blog-details .content {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 40px;
+    }
+    
+    .blog-details .content h2 {
+      font-weight: 700;
+      color: #222;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.75rem;
+    }
+    
+    .blog-details .content h3 {
+      font-weight: 600;
+      color: #333;
+      margin-top: 25px;
+      font-size: 1.4rem;
+    }
+
+    .blog-details blockquote {
+      border-left: 4px solid #e60023;
+      padding-left: 20px;
+      font-style: italic;
+      background: #fafafa;
+      padding: 20px;
+      margin: 30px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .blog-details ul {
+        margin-bottom: 20px;
+    }
+    
+    .blog-details li {
+        margin-bottom: 10px;
+    }
+
+    /* --- Sidebar Styles --- */
+    .sidebar {
+      padding-left: 20px;
+    }
+
+    .sidebar-widget {
+      background: #fff;
+      padding: 30px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+
+    .sidebar-widget h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #e60023;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+
+    .sidebar-author img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .recent-posts ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .recent-posts li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .recent-posts img {
+      width: 80px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-right: 15px;
+    }
+    
+    .recent-posts a {
+      color: #222;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 1.4;
+      transition: 0.3s;
+    }
+    
+    .recent-posts a:hover {
+      color: #e60023;
+    }
+
+  </style>
+</head>
+
+<body class="blog-page">
+
+  <header id="header" class="header fixed-top">
+    <div class="main-header">
+      <div class="container-fluid container-xl">
+        <div class="d-flex py-3 align-items-center justify-content-between">
+
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo_fr_1.svg" alt="Couillard Immobilier" class="header-logo">
+          </a>
+
+          <div class="header-nav d-flex align-items-center">
+            <nav id="navmenu" class="navmenu">
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1">Propriétés</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#services">Services</a></li>
+               
+                <li><a href="index.html#contact" class="btn-primary-header">Évaluation gratuite</a></li>
+              </ul>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title">
+      <div class="container">
+        <h1>Guide Achat</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+            
+            <li class="breadcrumb-item active" aria-current="page">Premier Acheteur</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section class="blog-details section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8">
+            <article class="blog-post">
+              
+              <div class="post-img">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Clés de maison et contrat" class="img-fluid article-img">
+              </div>
+
+              <div class="meta-top">
+                <span><i class="bi bi-person"></i> Simon Couillard</span>
+                <span><i class="bi bi-clock"></i> 22 Novembre 2025</span>
+                <span><i class="bi bi-folder"></i> Achat & Conseils</span>
+              </div>
+
+              <h1 class="title">Guide pour les premiers acheteurs : Évitez les erreurs courantes</h1>
+
+              <div class="content">
+                <p class="lead">
+                  L'achat d'une première propriété est souvent la plus grosse transaction financière de votre vie. C'est un moment excitant, mais qui peut rapidement devenir stressant si l'on est mal préparé.
+                </p>
+
+                <p>
+                  Pour vous aider à naviguer dans ce processus à Québec, voici les 3 pièges les plus fréquents que je vois chez les premiers acheteurs, et comment les éviter.
+                </p>
+
+                <h2>1. Magasiner une maison avant de magasiner son hypothèque</h2>
+                <p>
+                  C'est l'erreur #1. Vous tombez en amour avec une maison à Lévis affichée à 450 000$, vous faites une offre... pour réaliser ensuite que la banque ne vous prête que 375 000$. La déception est immense.
+                </p>
+                <ul>
+                    <li><strong>La solution :</strong> Obtenez une pré-qualification hypothécaire <em>avant</em> la première visite. Cela vous donne de la crédibilité auprès des vendeurs et vous permet de cibler les bonnes propriétés.</li>
+                </ul>
+
+                <h2>2. Oublier les frais de démarrage (Les frais cachés)</h2>
+                <p>
+                  Beaucoup de premiers acheteurs calculent leur mise de fonds (5% minimum), mais oublient le reste. Avoir juste assez pour la mise de fonds n'est pas suffisant.
+                </p>
+                <h3>Prévoyez un budget de 1.5% à 2% du prix d'achat pour :</h3>
+                <ul>
+                    <li><strong>La taxe de bienvenue :</strong> (Droits de mutation) payable quelques mois après l'achat.</li>
+                    <li><strong>L'inspection :</strong> Entre 500$ et 800$.</li>
+                    <li><strong>Le notaire :</strong> Environ 1200$ à 1500$.</li>
+                    <li><strong>Les ajustements de taxes :</strong> Remboursement des taxes foncières déjà payées par le vendeur.</li>
+                </ul>
+
+                <h2>3. Négliger l'inspection pour "gagner" l'offre</h2>
+                <p>
+                  Dans un marché compétitif, il est tentant de renoncer à l'inspection pour rendre son offre plus attrayante. C'est un jeu dangereux.
+                </p>
+                <blockquote>
+                  "Une maison peut sembler parfaite en surface et cacher des problèmes de fondation ou d'infiltration d'eau qui coûteront des dizaines de milliers de dollars. L'inspection est votre police d'assurance."
+                </blockquote>
+
+                <h2>Conclusion : L'importance d'être bien accompagné</h2>
+                <p>
+                  En tant que premier acheteur, mes services en tant que courtier immobilier sont <strong>gratuits pour vous</strong> (ma rétribution provient du vendeur). 
+                </p>
+                <p>
+                  Pourquoi vous priver d'un expert qui négociera en votre nom, rédigera les clauses légales pour vous protéger et vous guidera à chaque étape ?
+                </p>
+
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between pt-4 border-top">
+                <div class="social-share">
+                  <span class="me-2 fw-bold">Partager :</span>
+                  <a href="#" class="me-2 text-dark"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="me-2 text-dark"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="me-2 text-dark"><i class="bi bi-twitter-x"></i></a>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="sidebar">
+
+              <div class="sidebar-widget text-center sidebar-author">
+                <img src="assets/img/Simon.webp" alt="Simon Couillard">
+                <h3>Simon Couillard</h3>
+                <p>Courtier immobilier expert à Québec, Beauce et Lévis. Plus de 15 ans d'expérience à votre service.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100075509334329"><i class="bi bi-facebook fs-4 text-dark"></i></a>
+                </div>
+              </div>
+
+              <div class="sidebar-widget text-center bg-light">
+                <h3>Premier achat?</h3>
+                <p class="mb-4">Je vous accompagne gratuitement dans tout le processus d'achat. Sécurisez votre investissement dès maintenant.</p>
+                <a href="index.html#contact" class="btn-form-primary w-100">Contacter Simon</a>
+              </div>
+
+              
+
+            </div>
+          </div> 
+          </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <a href="index.html" class="logo d-flex align-items-center mb-3">
+              <span class="sitename">Couillard Immobilier</span>
+            </a>
+            <p class="tagline">
+              Groupe de courtiers immobiliers offrant un accompagnement de qualité pour vos
+              transactions résidentielles et projets d’investissement.
+            </p>
+            <div class="social-links mt-4">
+              <a href="https://www.facebook.com/profile.php?id=100075509334329" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="footer-links-grid">
+              <div class="row">
+                <div class="col-6 col-md-4">
+                  <h5>Le groupe</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1">Propriétés</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                  <h5>Services</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html#services">Achat</a></li>
+                    <li><a href="index.html#services">Vente</a></li>
+                    <li><a href="index.html#contact">Évaluation</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="footer-cta">
+              <h5>Parlons de votre projet</h5>
+              <a href="index.html#contact" class="btn btn-outline-light mt-2">Évaluation gratuite</a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-bottom-content">
+              <p class="mb-0">© <span class="sitename">Couillard Immobilier</span>. Tous droits réservés.</p>
+              <p class="mb-0"><span class="sitename">Conception web par</span> <a href="https://roymarketing.ca/">Roy Marketing</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -7136,3 +7136,101 @@ section,
   transform: scale(1.15);
   transform-origin: center;
 }
+/* --- Blog Section Styles --- */
+.blog .post-box {
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog .post-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.15);
+}
+
+.blog .post-img {
+  overflow: hidden;
+  position: relative;
+  height: 240px; /* Fixed height for consistency */
+}
+
+.blog .post-img img {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog .post-box:hover .post-img img {
+  transform: scale(1.1);
+}
+
+.blog .post-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog .post-category {
+  font-size: 14px;
+  color: #e60023; /* PD Red */
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.blog .post-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: var(--heading-font);
+}
+
+.blog .post-title a {
+  color: #222;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.blog .post-title a:hover {
+  color: #e60023;
+}
+
+.blog .post-date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.blog .read-more {
+  margin-top: auto; /* Pushes button to bottom */
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.blog .read-more i {
+  font-size: 16px;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.blog .read-more:hover {
+  color: #e60023;
+}
+
+.blog .read-more:hover i {
+  transform: translateX(5px);
+}
