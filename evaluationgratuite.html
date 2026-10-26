@@ -2,126 +2,386 @@
 <html lang="fr-CA">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17751777472"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17751777472');
+  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Evaluationgratuite - Couillard Immo</title>
-  <meta name="description" content="">
-  <meta name="robots" content="noindex, follow">
-  <meta name="keywords" content="">
+  <title>Évaluation gratuite de votre propriété | PROPRIO DIRECT</title>
+  <meta name="description" content="Obtenez une analyse comparative de marché gratuite et sans engagement pour votre propriété à Québec, à Lévis ou en Beauce, avec un courtier de PROPRIO DIRECT.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://couillardimmobilier.ca/evaluationgratuite.html">
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://couillardimmobilier.ca/evaluationgratuite.html">
-  <meta property="og:title" content="Évaluation gratuite - Couillard Immo">
+  <meta property="og:title" content="Évaluation gratuite de votre propriété | PROPRIO DIRECT">
+  <meta property="og:description" content="Obtenez une analyse comparative de marché gratuite et sans engagement pour votre propriété à Québec, à Lévis ou en Beauce, avec un courtier de PROPRIO DIRECT.">
   <meta property="og:image" content="https://couillardimmobilier.ca/assets/img/socialshare.png">
   <meta property="og:locale" content="fr_CA">
+  <meta property="og:site_name" content="Couillard Immobilier, PROPRIO DIRECT">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://couillardimmobilier.ca/assets/img/socialshare.png">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    /* --- Shared Buttons --- */
+    .btn-form-primary {
+      display: inline-block;
+      background: #e60023;
+      color: #fff;
+      padding: 14px 34px;
+      border-radius: 6px;
+      border: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 15px;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-form-primary:hover {
+      background: #b8001c;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(230, 0, 35, 0.25);
+    }
+
+    .mobile-nav-toggle {
+      color: #222 !important;
+      font-size: 32px;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    /* --- Page Title Section --- */
+    .page-title {
+      background-color: #f4f4f4;
+      padding: 120px 0 60px 0; /* Top padding accounts for fixed header */
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .page-title h1 {
+      font-weight: 800;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    .breadcrumb {
+      justify-content: center;
+      background: transparent;
+      padding: 0;
+    }
+    
+    .breadcrumb-item a {
+      color: #e60023;
+      text-decoration: none;
+    }
+
+    .breadcrumb-item.active {
+      color: #666;
+    }
+
+    /* --- Blog Details Styles --- */
+    .blog-details .article-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    .blog-details .meta-top {
+      margin-bottom: 20px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .blog-details .meta-top i {
+      color: #e60023;
+      margin-right: 5px;
+    }
+
+    .blog-details .meta-top span {
+      margin-right: 20px;
+    }
+
+    .blog-details .content {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 40px;
+    }
+    
+    .blog-details .content h2 {
+      font-weight: 700;
+      color: #222;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.75rem;
+    }
+    
+    .blog-details .content h3 {
+      font-weight: 600;
+      color: #333;
+      margin-top: 25px;
+      font-size: 1.4rem;
+    }
+
+    .blog-details blockquote {
+      border-left: 4px solid #e60023;
+      padding-left: 20px;
+      font-style: italic;
+      background: #fafafa;
+      padding: 20px;
+      margin: 30px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .blog-details ul {
+        margin-bottom: 20px;
+    }
+    
+    .blog-details li {
+        margin-bottom: 10px;
+    }
+
+    /* --- Sidebar Styles --- */
+    .sidebar {
+      padding-left: 20px;
+    }
+
+    .sidebar-widget {
+      background: #fff;
+      padding: 30px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+
+    .sidebar-widget h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #e60023;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+
+    .sidebar-author img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .recent-posts ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .recent-posts li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .recent-posts img {
+      width: 80px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-right: 15px;
+    }
+    
+    .recent-posts a {
+      color: #222;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 1.4;
+      transition: 0.3s;
+    }
+    
+    .recent-posts a:hover {
+      color: #e60023;
+    }
+
+  
+    /* --- Pages secteurs (Roy Marketing, brouillon) --- */
+    .agence-banner { padding: 18px 0 0; }
+    .agence-banner .agence-nom { font-size: 1.6rem; font-weight: 800; margin: 0; color: #111; }
+    .agence-banner .equipe-nom { font-size: 1rem; font-weight: 500; margin: 0; color: #555; }
+    .secteur-body { padding: 30px 0 60px; }
+    .secteur-body h2 { font-size: 1.5rem; font-weight: 700; margin: 36px 0 14px; }
+    .secteur-body h3 { font-size: 1.1rem; font-weight: 700; margin: 22px 0 8px; }
+    .secteur-body .reponse-directe { font-size: 1.15rem; }
+    .secteur-body .bloc-courtiers, .secteur-body .bloc-cta { background: #f6f6f6; border-radius: 8px; padding: 20px 24px; margin-top: 30px; }
+    .secteur-body .faq-item { margin-bottom: 18px; }
+    .secteur-body .liste-secteurs li { margin-bottom: 8px; }
+    .footer-mentions { font-size: 0.85rem; opacity: 0.85; margin-top: 12px; }
+    .footer-mentions p { margin-bottom: 6px; }
+  </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://couillardimmobilier.ca/evaluationgratuite.html#webpage",
+      "url": "https://couillardimmobilier.ca/evaluationgratuite.html",
+      "name": "Évaluation gratuite de votre propriété | PROPRIO DIRECT",
+      "description": "Obtenez une analyse comparative de marché gratuite et sans engagement pour votre propriété à Québec, à Lévis ou en Beauce, avec un courtier de PROPRIO DIRECT.",
+      "inLanguage": "fr-CA",
+      "isPartOf": {
+        "@id": "https://couillardimmobilier.ca/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://couillardimmobilier.ca/evaluationgratuite.html#breadcrumb"
+      },
+      "about": {
+        "@id": "https://couillardimmobilier.ca/evaluationgratuite.html#service"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://couillardimmobilier.ca/evaluationgratuite.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://couillardimmobilier.ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Évaluation gratuite",
+          "item": "https://couillardimmobilier.ca/evaluationgratuite.html"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://couillardimmobilier.ca/evaluationgratuite.html#service",
+      "name": "Évaluation gratuite (analyse comparative de marché)",
+      "serviceType": "Analyse comparative de marché",
+      "provider": {
+        "@id": "https://couillardimmobilier.ca/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Québec"
+        },
+        {
+          "@type": "City",
+          "name": "Lévis"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauce"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CAD"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://couillardimmobilier.ca/evaluationgratuite.html#faq",
+      "isPartOf": {
+        "@id": "https://couillardimmobilier.ca/evaluationgratuite.html#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "L'évaluation gratuite remplace-t-elle une évaluation agréée?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. L'évaluation gratuite est une analyse comparative de marché préparée par un courtier immobilier. Elle sert à établir un prix de mise en marché réaliste. Une évaluation agréée est faite par un évaluateur agréé, et un prêteur hypothécaire ou un notaire peut en exiger une dans certaines situations. Nous pouvons vous expliquer la différence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Est-ce que je m'engage à vendre avec vous?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. L'analyse comparative de marché est gratuite et sans engagement. Vous pouvez la demander pour planifier une vente, pour savoir où vous en êtes avant des rénovations ou simplement par curiosité. Si vous décidez de vendre plus tard, nous en reparlerons avec vous, à votre rythme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels renseignements dois-je fournir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'adresse de la propriété et vos coordonnées suffisent pour commencer. Si vous le pouvez, ajoutez dans le message le type de propriété, l'année de construction, les rénovations faites et ce qui vous amène à faire la demande. Le courtier vous posera ensuite les questions utiles pour comparer votre propriété à des ventes récentes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quels secteurs offrez-vous l'évaluation gratuite?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simon et Layna Couillard travaillent surtout à Québec et dans ses environs, à Lévis et sur la Rive-Sud, ainsi qu'en Beauce et dans les Etchemins. Consultez la page des secteurs desservis ou écrivez-nous: si votre propriété est ailleurs, nous vous dirons franchement si nous pouvons vous accompagner."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 
-<body class="evaluationgratuite-page">
+<body class="blog-page">
 
   <header id="header" class="header fixed-top">
-    <!-- Main Header -->
     <div class="main-header">
       <div class="container-fluid container-xl">
         <div class="d-flex py-3 align-items-center justify-content-between">
 
-          <!-- Logo -->
           <a href="index.html" class="logo d-flex align-items-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.webp" alt=""> -->
-            <h1 class="sitename">Couillard Immobilier</h1>
+            <img src="assets/img/logo_fr_1.svg" alt="Couillard Immobilier" class="header-logo">
           </a>
 
-          <!-- Navigation -->
-          <div class="header-nav">
+          <div class="header-nav d-flex align-items-center">
             <nav id="navmenu" class="navmenu">
               <ul>
-                <li><a href="#hero">Accueil</a></li>
-
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">À propos</a></li>
-
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1">Propriétés</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#services">Services</a></li>
+               
+                <li><a href="index.html#contact" class="btn-primary-header">Évaluation gratuite</a></li>
               </ul>
               <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-          </div>
-
-          <!-- Actions -->
-          <div class="header-actions d-flex align-items-center justify-content-end">
-
-            <!-- Account -->
-            <div class="dropdown account-dropdown">
-              <button class="header-action-btn" data-bs-toggle="dropdown">
-                <i class="bi bi-person"></i>
-              </button>
-              <div class="dropdown-menu">
-                <div class="dropdown-header">
-                  <h6>Welcome to <span class="sitename">Couillard Immobilier</span></h6>
-                  <p class="mb-0">Access account &amp; manage orders</p>
-                </div>
-                <div class="dropdown-body">
-                  <a class="dropdown-item d-flex align-items-center" href="account.html">
-                    <i class="bi bi-person-circle me-2"></i>
-                    <span>My Profile</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="account.html">
-                    <i class="bi bi-bag-check me-2"></i>
-                    <span>My Orders</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="account.html">
-                    <i class="bi bi-heart me-2"></i>
-                    <span>My Wishlist</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="account.html">
-                    <i class="bi bi-gear me-2"></i>
-                    <span>Settings</span>
-                  </a>
-                </div>
-                <div class="dropdown-footer">
-                  <a href="register.html" class="btn btn-primary w-100 mb-2">Sign In</a>
-                  <a href="login.html" class="btn btn-outline-primary w-100">Register</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Wishlist -->
-            <a href="account.html" class="header-action-btn d-none d-md-block">
-              <i class="bi bi-heart"></i>
-              <span class="badge">0</span>
-            </a>
-
-            <!-- Cart -->
-            <a href="cart.html" class="header-action-btn">
-              <i class="bi bi-cart3"></i>
-              <span class="badge">3</span>
-            </a>
-
-            <!-- Mobile Navigation Toggle -->
-            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
-
           </div>
         </div>
       </div>
@@ -130,266 +390,174 @@
 
   <main class="main">
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-5">
-            <div class="feature-showcase" data-aos="zoom-in" data-aos-delay="200">
-              <div class="app-preview">
-                <div class="phone-mockup">
-                  <img src="assets/img/screens/phone-1.webp" alt="App Preview" class="img-fluid">
-                </div>
-                <div class="floating-elements">
-                  <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="300">
-                    <div class="metric">
-                      <span class="number">98%</span>
-                      <span class="label">Efficiency</span>
-                    </div>
-                  </div>
-                  <div class="floating-card card-2" data-aos="fade-up" data-aos-delay="400">
-                    <div class="metric">
-                      <span class="number">24/7</span>
-                      <span class="label">Support</span>
-                    </div>
-                  </div>
-                  <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="500">
-                    <div class="chart-icon">
-                      <i class="bi bi-graph-up"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="content-section" data-aos="fade-left" data-aos-delay="200">
-
-              <div class="section-header">
-                <div class="feature-badge">
-                  <i class="bi bi-stars"></i>
-                  <span>Premium Features</span>
-                </div>
-                <h2>Everything you need to scale your business</h2>
-                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit voluptate velit esse cillum.</p>
-              </div>
-
-              <div class="features-grid">
-
-                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
-                  <div class="feature-icon">
-                    <i class="bi bi-lightning-charge"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h4>Lightning Fast</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia.</p>
-                  </div>
-                </div>
-
-                <div class="feature-item" data-aos="fade-up" data-aos-delay="350">
-                  <div class="feature-icon">
-                    <i class="bi bi-cloud-check"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h4>Cloud Sync</h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                  </div>
-                </div>
-
-                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                  <div class="feature-icon">
-                    <i class="bi bi-shield-check"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h4>Secure &amp; Private</h4>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur.</p>
-                  </div>
-                </div>
-
-                <div class="feature-item" data-aos="fade-up" data-aos-delay="450">
-                  <div class="feature-icon">
-                    <i class="bi bi-people-fill"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h4>Team Ready</h4>
-                    <p>Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit.</p>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="cta-section" data-aos="fade-up" data-aos-delay="500">
-                <a href="#" class="btn btn-primary">
-                  <span>Start Free Trial</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-                <div class="trial-info">
-                  <small>14-day free trial • No credit card required</small>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Features Section -->
-
-    <!-- Contact 4 Section -->
-    <section id="contact-4" class="contact-4 section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <div><span>Check Our</span> <span class="description-title">Contact</span></div>
-      </div><!-- End Section Title -->
-
+    <div class="agence-banner">
       <div class="container">
+        <p class="agence-nom">PROPRIO DIRECT, agence immobilière</p>
+        <p class="equipe-nom">Couillard Immobilier</p>
+      </div>
+    </div>
 
-        <div class="row gy-4">
+    <div class="page-title">
+      <div class="container">
+        <h1>Évaluation gratuite de votre propriété</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Évaluation gratuite</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
 
-          <div class="col-lg-4">
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div>
-                <h3>Address</h3>
-                <p>2847 Oak Street, San Francisco, CA 94102</p>
-              </div>
-            </div>
+    <section class="secteur-body section">
+      <div class="container">
+        <p class="reponse-directe">L'évaluation gratuite est une analyse comparative de marché faite par un courtier à partir de ventes comparables récentes dans votre secteur. Elle vous donne un ordre de grandeur réaliste pour fixer un prix de mise en marché. C'est gratuit, sans engagement, et ce n'est pas une évaluation agréée.</p>
+        <h2>Comment ça se passe</h2>
+        <ol>
+          <li>Vous remplissez le formulaire ci-dessous ou vous appelez Simon ou Layna.</li>
+          <li>Un courtier communique avec vous pour préciser l'adresse, le type de propriété et son état.</li>
+          <li>Il compare votre propriété à des ventes récentes de propriétés semblables dans votre secteur.</li>
+          <li>Il vous présente l'analyse comparative de marché et répond à vos questions, sans engagement.</li>
+        </ol>
+        <h2>Ce que l'analyse comparative de marché vous apporte</h2>
+        <p>L'analyse tient compte des ventes comparables récentes, des propriétés en vente dans le même secteur et des caractéristiques de votre propriété: superficie, terrain, rénovations, emplacement. Elle vous aide à décider du bon moment pour vendre et à fixer un prix de mise en marché cohérent avec le marché.</p>
+        <p>Ce n'est pas une évaluation agréée. Si un prêteur hypothécaire ou une autre partie exige une évaluation faite par un évaluateur agréé, nous pouvons vous expliquer la démarche.</p>
+        <h2>Demander votre évaluation gratuite</h2>
+        <p>Remplissez ce formulaire. Un courtier de PROPRIO DIRECT communiquera avec vous pour en discuter. Vous pouvez aussi appeler Simon au <a href="tel:+14188039192">418-803-9192</a> ou Layna au <a href="tel:+14188038632">418-803-8632</a>.</p>
+        <div class="contact">
+          <div class="contact-form-container">
+<form action="https://formspree.io/f/xdkrnlqp" method="post" class="contact-form">
 
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-telephone"></i>
-              </div>
-              <div>
-                <h3>Call Me</h3>
-                <p>+1 (555) 234-5678</p>
-              </div>
-            </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-field">
+        <input type="text" name="name" class="form-input" id="userName" placeholder="Votre nom complet" required>
+        <label for="userName" class="field-label">Nom complet</label>
+      </div>
+    </div>
 
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div>
-                <h3>Email Me</h3>
-                <p>alex@example.com</p>
-              </div>
-            </div>
+    <div class="col-md-6">
+      <div class="form-field">
+        <input type="email" class="form-input" name="email" id="userEmail" placeholder="Votre courriel" required>
+        <label for="userEmail" class="field-label">Courriel</label>
+      </div>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-field">
+        <input type="tel" class="form-input" name="phone" id="userPhone" placeholder="Votre téléphone">
+        <label for="userPhone" class="field-label">Téléphone</label>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-field">
+        <select class="form-input" name="project_type" id="projectType" required>
+          <option value="" disabled></option>
+          <option value="Vendre une propriété">Vendre une propriété</option>
+          <option value="Évaluation de propriété" selected>Évaluation d’une propriété</option>
+          <option value="Achat immobilier">Achat immobilier</option>
+          <option value="Investissement locatif">Investissement locatif</option>
+          <option value="Autre projet immobilier">Autre projet immobilier</option>
+        </select>
+        <label for="projectType" class="field-label">Type de projet</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-field message-field">
+    <textarea class="form-input message-input" name="message" id="userMessage" rows="5"
+              placeholder="Parlez-nous de votre propriété ou de votre projet" required></textarea>
+    <label for="userMessage" class="field-label">Message</label>
+  </div>
+
+  <button type="submit" class="send-button">
+    Envoyer ma demande 
+    <span class="button-arrow">→</span>
+  </button>
+
+</form>
           </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div>
-
+        </div>
+        <div class="bloc-courtiers">
+          <h2>Vos courtiers</h2>
+          <p><a href="simon.html">Simon Couillard</a>, courtier immobilier résidentiel et commercial, exerce par Simon Couillard Courtier Immobilier Inc., société par actions d'un courtier immobilier résidentiel et commercial: <a href="tel:+14188039192">418-803-9192</a>.</p>
+          <p><a href="layna.html">Layna Couillard</a>, courtière immobilière résidentielle: <a href="tel:+14188038632">418-803-8632</a>.</p>
+          <p>Tous deux exercent au sein de PROPRIO DIRECT, agence immobilière.</p>
         </div>
 
+        <h2>Questions fréquentes sur l'évaluation gratuite</h2>
+        <div class="faq-item">
+          <h3>L&#x27;évaluation gratuite remplace-t-elle une évaluation agréée?</h3>
+          <p>Non. L'évaluation gratuite est une analyse comparative de marché préparée par un courtier immobilier. Elle sert à établir un prix de mise en marché réaliste. Une évaluation agréée est faite par un évaluateur agréé, et un prêteur hypothécaire ou un notaire peut en exiger une dans certaines situations. Nous pouvons vous expliquer la différence.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Est-ce que je m&#x27;engage à vendre avec vous?</h3>
+          <p>Non. L'analyse comparative de marché est gratuite et sans engagement. Vous pouvez la demander pour planifier une vente, pour savoir où vous en êtes avant des rénovations ou simplement par curiosité. Si vous décidez de vendre plus tard, nous en reparlerons avec vous, à votre rythme.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Quels renseignements dois-je fournir?</h3>
+          <p>L'adresse de la propriété et vos coordonnées suffisent pour commencer. Si vous le pouvez, ajoutez dans le message le type de propriété, l'année de construction, les rénovations faites et ce qui vous amène à faire la demande. Le courtier vous posera ensuite les questions utiles pour comparer votre propriété à des ventes récentes.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Dans quels secteurs offrez-vous l&#x27;évaluation gratuite?</h3>
+          <p>Simon et Layna Couillard travaillent surtout à Québec et dans ses environs, à Lévis et sur la Rive-Sud, ainsi qu'en Beauce et dans les Etchemins. Consultez la page des secteurs desservis ou écrivez-nous: si votre propriété est ailleurs, nous vous dirons franchement si nous pouvons vous accompagner.</p>
+        </div>
+        <h2>Secteurs desservis</h2>
+        <p>Voyez la liste de nos <a href="secteurs.html">secteurs desservis</a>, de Québec à Lévis et jusqu'en Beauce.</p>
       </div>
-
-    </section><!-- /Contact 4 Section -->
+    </section>
 
   </main>
 
   <footer id="footer" class="footer dark-background">
-
     <div class="container">
       <div class="row gy-5">
-
         <div class="col-lg-4">
           <div class="footer-brand">
             <a href="index.html" class="logo d-flex align-items-center mb-3">
               <span class="sitename">Couillard Immobilier</span>
             </a>
-            <p class="tagline">Innovating the digital landscape with elegant solutions and timeless design.</p>
-
+            <p class="tagline">
+              Simon et Layna Couillard, courtiers immobiliers chez PROPRIO DIRECT, agence immobilière.
+            </p>
             <div class="social-links mt-4">
-              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100075509334329" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-6">
-          <div class="footer-links-grid">
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <h5>Company</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Newsroom</a></li>
-                </ul>
-              </div>
-              <div class="col-6 col-md-4">
-                <h5>Services</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Web Development</a></li>
-                  <li><a href="#">UI/UX Design</a></li>
-                  <li><a href="#">Digital Strategy</a></li>
-                  <li><a href="#">Branding</a></li>
-                </ul>
-              </div>
-              <div class="col-6 col-md-4">
-                <h5>Support</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Help Center</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                </ul>
+            <div class="footer-links-grid">
+              <div class="row">
+                <div class="col-6 col-md-4">
+                  <h5>Le groupe</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1">Propriétés</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                  <h5>Services</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html#services">Achat</a></li>
+                    <li><a href="index.html#services">Vente</a></li>
+                    <li><a href="evaluationgratuite.html">Évaluation gratuite</a></li>
+                    <li><a href="secteurs.html">Secteurs desservis</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-2">
-          <div class="footer-cta">
-            <h5>Let's Connect</h5>
-            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          <div class="col-lg-2">
+            <div class="footer-cta">
+              <h5>Parlons de votre projet</h5>
+              <a href="index.html#contact" class="btn btn-outline-light mt-2">Évaluation gratuite</a>
+            </div>
           </div>
-        </div>
-
       </div>
     </div>
 
@@ -398,34 +566,33 @@
         <div class="row">
           <div class="col-12">
             <div class="footer-bottom-content">
-              <p class="mb-0">© <span class="sitename">Couillard Immobilier</span>. All rights reserved.</p>
-
+              <p class="mb-0">© <span class="sitename">Couillard Immobilier</span>. Tous droits réservés.</p>
+              <p class="mb-0"><span class="sitename">Conception web par</span> <a href="https://roymarketing.ca/">Roy Marketing</a> </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="footer-mentions">
+              <p><strong>PROPRIO DIRECT, agence immobilière</strong>, 3899, autoroute des Laurentides, bureau 200, Laval (Québec) H7L 3H7 · <a href="tel:+15148564444">514-856-4444</a></p>
+              <p>Simon Couillard, courtier immobilier résidentiel et commercial · Simon Couillard Courtier Immobilier Inc., société par actions d'un courtier immobilier résidentiel et commercial · <a href="tel:+14188039192">418-803-9192</a></p>
+              <p>Layna Couillard, courtière immobilière résidentielle · <a href="tel:+14188038632">418-803-8632</a></p>
+              <p>Couillard Immobilier est le nom d'équipe de Simon et Layna Couillard au sein de PROPRIO DIRECT.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

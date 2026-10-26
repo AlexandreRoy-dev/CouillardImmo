@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Brouillon. Seulement les URL canoniques indexables.
-     evaluationgratuite.html s'ajoute quand la page gabarit est refaite.
      Les pages secteurs s'ajoutent une à une quand elles passent la barrière (contenu/spec-secteurs.md).
      Pas de lastmod: on l'ajoutera avec la vraie date de mise en ligne, jamais une date inventée. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://couillardimmobilier.ca/</loc></url>
   <url><loc>https://couillardimmobilier.ca/simon.html</loc></url>
   <url><loc>https://couillardimmobilier.ca/layna.html</loc></url>
+  <url><loc>https://couillardimmobilier.ca/evaluationgratuite.html</loc></url>
   <url><loc>https://couillardimmobilier.ca/article-premier-achat.html</loc></url>
   <url><loc>https://couillardimmobilier.ca/article-valorisation.html</loc></url>
   <url><loc>https://couillardimmobilier.ca/articles-previsions-2026.html</loc></url>
