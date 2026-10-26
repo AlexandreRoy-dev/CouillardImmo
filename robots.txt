@@ -1,0 +1,41 @@
+# Brouillon robots.txt pour https://couillardimmobilier.ca (non publié)
+# Tout est ouvert, y compris aux robots des moteurs de réponse IA.
+# Les pages de gabarit sont bloquées par <meta name="robots" content="noindex, follow">, pas ici,
+# sinon Google ne verrait jamais le noindex.
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://couillardimmobilier.ca/sitemap.xml
