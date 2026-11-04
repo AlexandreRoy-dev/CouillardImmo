@@ -7257,3 +7257,5 @@ section,
 .listings .listings-more { text-align: center; margin-top: 36px; }
 .listings .listings-more .btn { background: var(--accent-color); border-color: var(--accent-color); color: #fff; padding: 12px 28px; border-radius: 8px; font-weight: 600; }
 .listings .listings-more .btn:hover { background: color-mix(in srgb, var(--accent-color), #000 15%); border-color: color-mix(in srgb, var(--accent-color), #000 15%); }
+.listings .listing-badge.sold { background: var(--heading-color); }
+.listings .listing-card.is-sold .listing-media img { filter: grayscale(35%); }
