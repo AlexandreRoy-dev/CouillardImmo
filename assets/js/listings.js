@@ -12,15 +12,17 @@
     var media = l.photo
       ? '<img src="' + esc(l.photo) + '" alt="' + esc(l.adresse + ', ' + l.ville) + '" loading="lazy">'
       : '<div class="listing-placeholder"><i class="bi bi-house-door"></i><span>Photos sur Centris</span></div>';
-    var badge = l.nouveau ? '<span class="listing-badge">Nouveau</span>' : '';
+    var vendu = l.statut === 'vendu';
+    var badge = vendu ? '<span class="listing-badge sold">Vendu</span>'
+      : ((l.statut === 'nouveau' || l.nouveau) ? '<span class="listing-badge">Nouveau</span>' : '');
     var specs = [];
     if (l.chambres) specs.push('<span><i class="bi bi-door-closed"></i> ' + esc(l.chambres) + ' ch.</span>');
     if (l.sallesDeBain) specs.push('<span><i class="bi bi-droplet"></i> ' + esc(l.sallesDeBain) + ' sdb</span>');
     return '<div class="col-md-6 col-lg-4">' +
-      '<a class="listing-card" href="' + esc(l.url) + '" target="_blank" rel="noopener">' +
+      '<a class="listing-card' + (vendu ? ' is-sold' : '') + '" href="' + esc(l.url) + '" target="_blank" rel="noopener">' +
       '<div class="listing-media">' + media + badge + '</div>' +
       '<div class="listing-body">' +
-      '<div class="listing-price">' + fmtPrix(l.prix) + '</div>' +
+      '<div class="listing-price">' + (vendu ? 'Vendu' : (l.prix ? fmtPrix(l.prix) : 'Prix sur demande')) + '</div>' +
       '<div class="listing-type">' + esc(l.type) + '</div>' +
       '<div class="listing-address">' + esc(l.adresse) + '</div>' +
       '<div class="listing-city"><i class="bi bi-geo-alt"></i> ' + esc(l.ville) + (l.region ? ', ' + esc(l.region) : '') + '</div>' +

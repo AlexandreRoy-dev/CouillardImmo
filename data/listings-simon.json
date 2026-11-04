@@ -1,57 +1,67 @@
 {
   "courtier": "Simon Couillard",
-  "pageCentris": "https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873",
-  "miseAJour": "2026-11-04",
-  "note": "Fichier tenu à jour à la main à partir des inscriptions du courtier. Ajouter, modifier ou retirer une inscription ici. Le champ photo est optionnel (chemin d'une image locale, ex. assets/img/listings/15138535.webp).",
+  "source": "https://propriodirect.com/simon-couillard/",
+  "miseAJour": "2026-11-04 09:00",
   "inscriptions": [
     {
-      "mls": "15138535",
-      "photo": "",
-      "adresse": "4, Rue Saint-Charles",
-      "ville": "Sainte-Brigitte-de-Laval",
-      "region": "Capitale-Nationale",
-      "prix": 189000,
-      "type": "Maison à vendre",
-      "chambres": 2,
-      "sallesDeBain": 1,
-      "url": "https://www.centris.ca/fr/maison~a-vendre~sainte-brigitte-de-laval/15138535"
-    },
-    {
-      "mls": "12236746",
-      "photo": "",
-      "adresse": "8, Chemin des Lys",
-      "ville": "Lac-Etchemin",
-      "region": "Chaudière-Appalaches",
-      "prix": 319000,
-      "type": "Maison à vendre",
-      "chambres": 2,
-      "sallesDeBain": 1,
-      "url": "https://www.centris.ca/fr/maison~a-vendre~lac-etchemin/12236746"
+      "mls": "24971501",
+      "prix": 239000,
+      "adresse": "11320, 3e Avenue",
+      "ville": "Saint-Georges",
+      "type": "Maison de plain-pied",
+      "chambres": 5,
+      "sallesDeBain": 2,
+      "statut": "nouveau",
+      "photo": "https://cdn.propriodirect.com/pd/listings/24971501/medium/Property_24971501_Photo_110695930_20261101222100000.jpg",
+      "url": "https://propriodirect.com/chaudiere-appalaches/saint-georges/maison-de-plain-pied-a-vendre/11320-3e-avenue-24971501"
     },
     {
       "mls": "24060099",
-      "photo": "",
+      "prix": 239000,
       "adresse": "520, 143e Rue",
       "ville": "Saint-Georges",
-      "region": "Chaudière-Appalaches",
-      "prix": 239000,
-      "type": "Maison à vendre",
+      "type": "Maison de plain-pied",
       "chambres": 3,
       "sallesDeBain": 2,
-      "url": "https://www.centris.ca/fr/maison~a-vendre~saint-georges/24060099"
+      "statut": "",
+      "photo": "https://cdn.propriodirect.com/pd/listings/24060099/medium/Property_24060099_Photo_110443170_20261021165159000.jpg",
+      "url": "https://propriodirect.com/chaudiere-appalaches/saint-georges/maison-de-plain-pied-a-vendre/520-143e-rue-24060099"
     },
     {
-      "mls": "24971501",
-      "photo": "",
-      "adresse": "11320, 3e Avenue",
-      "ville": "Saint-Georges",
-      "region": "Chaudière-Appalaches",
-      "prix": 239000,
-      "type": "Maison à vendre",
+      "mls": "15138535",
+      "prix": 189000,
+      "adresse": "4, Rue St-Charles",
+      "ville": "Sainte-Brigitte-de-Laval",
+      "type": "Maison à un étage et demi",
+      "chambres": 2,
+      "sallesDeBain": 1,
+      "statut": "",
+      "photo": "https://cdn.propriodirect.com/pd/listings/15138535/medium/Property_15138535_Photo_108724708_20260814185942000.jpg",
+      "url": "https://propriodirect.com/capitale-nationale/sainte-brigitte-de-laval/maison-a-un-etage-et-demi-a-vendre/4-rue-st-charles-15138535"
+    },
+    {
+      "mls": "12236746",
+      "prix": 319000,
+      "adresse": "8, Ch. des Lys",
+      "ville": "Lac-Etchemin",
+      "type": "Maison de plain-pied",
+      "chambres": 2,
+      "sallesDeBain": 1,
+      "statut": "",
+      "photo": "https://cdn.propriodirect.com/pd/listings/12236746/medium/Property_12236746_Photo_107074889_20260602195757000.jpg",
+      "url": "https://propriodirect.com/chaudiere-appalaches/lac-etchemin/maison-de-plain-pied-a-vendre/8-ch-des-lys-12236746"
+    },
+    {
+      "mls": "12366234",
+      "prix": null,
+      "adresse": "2315, Av. Royale",
+      "ville": "Québec (Beauport)",
+      "type": "Maison à étages",
       "chambres": 5,
-      "sallesDeBain": 2,
-      "url": "https://www.centris.ca/fr/maison~a-vendre~saint-georges/24971501",
-      "nouveau": true
+      "sallesDeBain": 4,
+      "statut": "vendu",
+      "photo": "https://cdn.propriodirect.com/pd/listings/12366234/medium/Property_12366234_Photo_98204227_20250423174150000.jpg",
+      "url": "https://propriodirect.com/capitale-nationale/quebec-beauport/maison-a-etages-a-vendre/2315-av-royale-12366234"
     }
   ]
 }
