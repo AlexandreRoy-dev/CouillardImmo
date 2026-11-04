@@ -1,0 +1,45 @@
+{
+  "courtier": "Layna Couillard",
+  "pageCentris": "https://www.centris.ca/fr/courtier-immobilier~layna-couillard~proprio-direct/h9545",
+  "miseAJour": "2026-11-04",
+  "note": "Fichier tenu à jour à la main à partir des inscriptions du courtier. Ajouter, modifier ou retirer une inscription ici. Le champ photo est optionnel (chemin d'une image locale, ex. assets/img/listings/15138535.webp).",
+  "inscriptions": [
+    {
+      "mls": "12236746",
+      "photo": "",
+      "adresse": "8, Chemin des Lys",
+      "ville": "Lac-Etchemin",
+      "region": "Chaudière-Appalaches",
+      "prix": 319000,
+      "type": "Maison à vendre",
+      "chambres": 2,
+      "sallesDeBain": 1,
+      "url": "https://www.centris.ca/fr/maison~a-vendre~lac-etchemin/12236746"
+    },
+    {
+      "mls": "24060099",
+      "photo": "",
+      "adresse": "520, 143e Rue",
+      "ville": "Saint-Georges",
+      "region": "Chaudière-Appalaches",
+      "prix": 239000,
+      "type": "Maison à vendre",
+      "chambres": 3,
+      "sallesDeBain": 2,
+      "url": "https://www.centris.ca/fr/maison~a-vendre~saint-georges/24060099"
+    },
+    {
+      "mls": "24971501",
+      "photo": "",
+      "adresse": "11320, 3e Avenue",
+      "ville": "Saint-Georges",
+      "region": "Chaudière-Appalaches",
+      "prix": 239000,
+      "type": "Maison à vendre",
+      "chambres": 5,
+      "sallesDeBain": 2,
+      "url": "https://www.centris.ca/fr/maison~a-vendre~saint-georges/24971501",
+      "nouveau": true
+    }
+  ]
+}

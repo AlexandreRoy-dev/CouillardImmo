@@ -103,7 +103,7 @@
           <nav id="navmenu" class="navmenu">
             <ul>
               <li><a href="./index.html" class="active">Accueil</a></li>
-              <li><a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1">Propriétés</a></li>
+              <li><a href="#proprietes">Propriétés</a></li>
               <li><a href="index.html#about">À propos</a></li>
               <li><a href="index.html#services">Services</a></li>
               <li><a href="index.html#contact" class="btn-primary-header">Évaluation gratuite</a></li>
@@ -148,7 +148,7 @@
           </p>
 
           <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-            <a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873?uc=1" class="btn btn-primary">Voir mes propriétés</a>
+            <a href="#proprietes" class="btn btn-primary">Voir mes propriétés</a>
             <a href="#contact-3" class="btn btn-outline">Évaluation gratuite</a>
           </div>
 
@@ -193,6 +193,24 @@
 </section>
 <!-- /Hero 3 Section -->
 
+
+<!-- Propriétés Section -->
+<section id="proprietes" class="listings section">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Propriétés</h2>
+    <div><span>Mes propriétés</span> <span class="description-title">à vendre</span></div>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100" data-listings="data/listings-simon.json">
+    <div class="row gy-4 listings-grid"></div>
+    <div class="listings-more">
+      <a href="https://www.centris.ca/fr/courtier-immobilier~simon-couillard~proprio-direct/e9873" class="btn btn-primary" target="_blank" rel="noopener">Voir toutes mes propriétés sur Centris</a>
+    </div>
+  </div>
+
+</section>
+<!-- /Propriétés Section -->
 
 <!-- About Me Section -->
 <section id="about-me" class="about-me section">
@@ -465,7 +483,7 @@
                 <ul class="list-unstyled">
                   <li><a href="index.html#about">À propos</a></li>
                   <li><a href="index.html#agents">Nos courtiers</a></li>
-                  <li><a href="https://www.centris.ca/fr/courtier-immobilier~layna-couillard~proprio-direct/h9545">Propriétés</a></li>
+                  <li><a href="#proprietes">Propriétés</a></li>
                   <!-- <li><a href="#testimonials">Témoignages</a></li> -->
                 </ul>
               </div>
@@ -525,6 +543,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/listings.js"></script>
 
 </body>
 
